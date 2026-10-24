@@ -1,0 +1,48 @@
+---
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import '../styles/about.css';
+import { copy, ORG_URL, type Locale, type PageKey } from '../content';
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+  title: string;
+  description: string;
+}
+const { locale, page, title, description } = Astro.props;
+const c = copy[locale];
+const base = locale === 'ja' ? '/' : '/ko/';
+const path = (k: PageKey) => (k === 'gate' ? base : `${base}${k}/`);
+const otherBase = locale === 'ja' ? '/ko/' : '/';
+const otherPath = page === 'gate' ? otherBase : `${otherBase}${page}/`;
+const keys: PageKey[] = ['gate', 'projects', 'atfedi'];
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="alternate" hreflang={locale} href={path(page)} />
+    <link rel="alternate" hreflang={locale === 'ja' ? 'ko' : 'ja'} href={otherPath} />
+  </head>
+  <body>
+    <header class="bar">
+      <a class="mark" href={base}>{c.siteName}</a>
+      <a class="lang" href={otherPath} hreflang={locale === 'ja' ? 'ko' : 'ja'}>{c.langSwitch}</a>
+    </header>
+    <nav class="tabs" aria-label={c.navLabel}>
+      {keys.map((k) => <a href={path(k)} aria-current={k === page ? 'page' : undefined}>{c.nav[k]}</a>)}
+    </nav>
+
+    <main><slot /></main>
+
+    <footer>
+      <p>{c.footer}</p>
+      <p><a href={ORG_URL}>github.com/sukhi-social</a></p>
+    </footer>
+  </body>
+</html>
