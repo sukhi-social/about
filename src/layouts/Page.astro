@@ -45,8 +45,11 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
     <main><slot /></main>
 
     <footer>
-      <p>{c.footer}</p>
-      <p><a href={ORG_URL}>github.com/sukhi-social</a></p>
+      <div>
+        <p>{c.footer}</p>
+        <p><a href={ORG_URL}>github.com/sukhi-social</a></p>
+      </div>
+      <p class="blessing" lang="en">Sukhī bhava!<br />Be Happy!</p>
     </footer>
   </body>
 </html>

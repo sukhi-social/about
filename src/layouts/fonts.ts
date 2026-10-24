@@ -2,6 +2,9 @@
 // フォントは、ここだけで読み込む(ふつうのページと 404 で共有)。
 import '@fontsource/nunito/latin-400.css';
 import '@fontsource/nunito/latin-700.css';
+// 「Sukhī」の ī は latin-ext にある
+import '@fontsource/nunito/latin-ext-400.css';
+import '@fontsource/nunito/latin-ext-700.css';
 import '@fontsource/zen-maru-gothic/japanese-400.css';
 import '@fontsource/zen-maru-gothic/japanese-700.css';
 import '@fontsource/gothic-a1/korean-400.css';

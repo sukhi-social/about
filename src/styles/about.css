@@ -58,7 +58,7 @@ h2 { font-size: 1.3rem; margin: 3rem 0 0.75rem; }
 .facts { padding-left: 1.25rem; }
 .facts li { margin-block: 0.25rem; }
 .more { font-weight: 600; }
-footer { padding-block: 3rem 2.5rem; color: var(--muted); font-size: 0.9rem; }
+footer { padding-block: 3rem 2.5rem; color: var(--muted); font-size: 0.9rem; display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; }
 footer p { margin: 0.2rem 0; }
 
 /* ── pages / tabs ── */
@@ -106,3 +106,6 @@ html:lang(ja) .tabs, html:lang(ja) .cards span, html:lang(ja) .facts, html:lang(
 .lost section:lang(ja) { letter-spacing: 0.075em; }
 .lost section:lang(ko) { letter-spacing: -0.03em; line-height: 1.6; }
 .lost section:lang(ko) h1 { letter-spacing: normal; }
+
+/* 右下のひとこと。英語の祈りなので、字間はそのまま。 */
+footer .blessing { text-align: right; letter-spacing: normal; font-weight: 700; color: var(--accent); line-height: 1.5; margin: 0; flex: none; }
