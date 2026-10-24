@@ -77,19 +77,19 @@ export const copy: Record<Locale, Copy> = {
     },
     gate: {
       title: 'sukhi — あたたかいみんなといっしょに',
-      description: 'sukhi は、人があつまれて、ふらっと立ち寄れる、あたたかい場所をつくっています。',
-      lead: 'sukhi-social は、人があつまれて、さらっと立ち寄れる場所をつくろうとしています。ずっといても、ちょっと顔を出すだけでも、大丈夫。いそがず、ゆっくり見ていってください。',
+      description: 'sukhi は、人があつまれて、ふらっと立ち寄れる、和やかな場所です。',
+      lead: 'sukhi-social は、人があつまれて、さらっと立ち寄れる、和やかな場所です。ずっといても、ちょっと顔を出すだけでも、大丈夫。いそがず、ゆっくり見ていってください。',
       doorsHeading: 'どこから見ましょうか',
       doors: [
-        { key: 'projects', title: 'sukhi-social のこと', text: 'どんな場所をつくろうとしているのか、なにをつくっているのかを書きました。' },
+        { key: 'projects', title: 'sukhi-social のこと', text: 'どんな場所なのか、いまなにをつくっているのかを書きました。' },
         { key: 'atfedi', title: 'atfedi.de とのこと', text: 'フェディバースのカタログ atfedi.de と、sukhi のかんけいを書きました。' }
       ]
     },
     projects: {
       title: 'sukhi-social のこと — sukhi',
-      description: 'sukhi-social がつくろうとしている場所と、いまつくっているものの紹介です。',
+      description: 'sukhi-social という場所と、いまつくっているものの紹介です。',
       heading: 'sukhi-social のこと',
-      lead: 'sukhi-social は、人があつまれて、さらっと訪ねられる空間をつくろうとしている、GitHub の組織です。ここは、その入口です。つくっているものは、ぜんぶ公開していて、だれでも読めます。',
+      lead: 'sukhi-social は、人があつまれて、さらっと訪ねられる、和やかな空間をつくっている GitHub の組織です。ここは、その入口です。つくっているものは、ぜんぶ公開していて、だれでも読めます。',
       itemsHeading: 'いま、つくっているもの',
       items: [
         { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'この場所の土台にするソフトウェア。Mastodon / Misskey の API と互換性のある、フェディバースの SNS サーバー。' },
@@ -115,7 +115,7 @@ export const copy: Record<Locale, Copy> = {
       ],
       relHeading: 'sukhi とのかんけい',
       rel: [
-        'sukhi-social がつくろうとしているのは、人があつまって「過ごす」場所です。atfedi.de は、フェディバースで使えるものを「さがす」ための地図です。',
+        'sukhi-social は、人があつまって「過ごす」場所です。atfedi.de は、フェディバースで使えるものを「さがす」ための地図です。',
         'atfedi.de は、sukhi-social のサブプロジェクトです。ソースコードも、sukhi-social の GitHub にあります。',
         'どちらも、「あたたかく、いそがずに」という気持ちを分けあっています。'
       ],
@@ -139,19 +139,19 @@ export const copy: Record<Locale, Copy> = {
     },
     gate: {
       title: 'sukhi — 따뜻한 사람들과 함께',
-      description: 'sukhi는 사람들이 모이고, 가볍게 들를 수 있는 따뜻한 공간을 만들고 있어요.',
-      lead: 'sukhi-social은 사람들이 모일 수 있고, 가볍게 들를 수도 있는 공간을 만들려고 해요. 오래 머물러도, 잠깐 얼굴만 비춰도 괜찮아요. 서두르지 말고 천천히 둘러보세요.',
+      description: 'sukhi는 사람들이 모이고, 가볍게 들를 수 있는 포근한 공간이에요.',
+      lead: 'sukhi-social은 사람들이 모일 수 있고, 가볍게 들를 수도 있는 포근한 공간이에요. 오래 머물러도, 잠깐 얼굴만 비춰도 괜찮아요. 서두르지 말고 천천히 둘러보세요.',
       doorsHeading: '어디부터 볼까요',
       doors: [
-        { key: 'projects', title: 'sukhi-social 이야기', text: '어떤 공간을 만들려는지, 무엇을 만들고 있는지 적었어요.' },
+        { key: 'projects', title: 'sukhi-social 이야기', text: '어떤 공간인지, 지금 무엇을 만들고 있는지 적었어요.' },
         { key: 'atfedi', title: 'atfedi.de 이야기', text: '페디버스 카탈로그 atfedi.de와 sukhi의 관계를 적었어요.' }
       ]
     },
     projects: {
       title: 'sukhi-social 이야기 — sukhi',
-      description: 'sukhi-social이 만들려는 공간과 지금 만들고 있는 것을 소개해요.',
+      description: 'sukhi-social이라는 공간과 지금 만들고 있는 것을 소개해요.',
       heading: 'sukhi-social 이야기',
-      lead: 'sukhi-social은 사람들이 모이고 가볍게 들를 수 있는 공간을 만들려는 GitHub 조직이에요. 여기는 그 입구예요. 만들고 있는 것은 모두 공개되어 있어서 누구나 읽을 수 있어요.',
+      lead: 'sukhi-social은 사람들이 모이고 가볍게 들를 수 있는 포근한 공간을 만들고 있는 GitHub 조직이에요. 여기는 그 입구예요. 만들고 있는 것은 모두 공개되어 있어서 누구나 읽을 수 있어요.',
       itemsHeading: '지금 만들고 있는 것',
       items: [
         { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: '이 공간의 토대로 쓸 소프트웨어예요. Mastodon / Misskey API와 호환되는 페디버스 SNS 서버예요.' },
@@ -177,7 +177,7 @@ export const copy: Record<Locale, Copy> = {
       ],
       relHeading: 'sukhi와의 관계',
       rel: [
-        'sukhi-social이 만들려는 것은 사람들이 모여 ‘지내는’ 공간이에요. atfedi.de는 페디버스에서 쓸 수 있는 것을 ‘찾는’ 지도예요.',
+        'sukhi-social은 사람들이 모여 ‘지내는’ 공간이에요. atfedi.de는 페디버스에서 쓸 수 있는 것을 ‘찾는’ 지도예요.',
         'atfedi.de는 sukhi-social의 서브 프로젝트예요. 소스 코드도 sukhi-social의 GitHub에 있어요.',
         '둘 다 ‘따뜻하게, 서두르지 않고’라는 마음을 나누고 있어요.'
       ],
