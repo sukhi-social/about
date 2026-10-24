@@ -93,3 +93,5 @@ main { min-height: 50vh; }
 html:lang(ko) body { letter-spacing: -0.03em; line-height: 1.6; }
 /* いちばん小さい本文(カードの説明・フッター)だけ、少しゆるめる。 */
 html:lang(ko) .cards span, html:lang(ko) footer { letter-spacing: -0.025em; }
+/* スローガン(玄関の大見出し)だけは、字間を調整しない。 */
+html:lang(ko) .hero h1 { letter-spacing: normal; }
