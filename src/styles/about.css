@@ -96,3 +96,8 @@ html:lang(ko) .cards span, html:lang(ko) footer { letter-spacing: -0.025em; }
 /* スローガン(玄関の大見出し)だけは、字間を調整しない。 */
 html:lang(ko) .hero h1 { letter-spacing: normal; }
 code { font-size: 0.92em; background: var(--accent-soft); padding: 0.05em 0.4em; border-radius: 0.4em; }
+
+/* 日本語(Zen Maru Gothic)の字間。ゆったり読む文は 0.075em、
+   さっと目を通すところ(タブ・カードの説明・リスト・フッター)は 0.05em。 */
+html:lang(ja) body { letter-spacing: 0.075em; }
+html:lang(ja) .tabs, html:lang(ja) .cards span, html:lang(ja) .facts, html:lang(ja) footer, html:lang(ja) .bar { letter-spacing: 0.05em; }
