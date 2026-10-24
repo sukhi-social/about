@@ -12,7 +12,7 @@ export const FEDI_REPO_URL = 'https://github.com/sukhi-social/sukhi-fedi';
 export const ATFEDI_URL = 'https://atfedi.de';
 
 export type Locale = 'ja' | 'ko';
-export type PageKey = 'gate' | 'projects' | 'atfedi';
+export type PageKey = 'gate' | 'place' | 'projects' | 'atfedi';
 
 interface Project {
   name: string;
@@ -24,6 +24,11 @@ interface Door {
   key: Exclude<PageKey, 'gate'>;
   title: string;
   text: string;
+}
+
+interface Block {
+  heading: string;
+  text: string[];
 }
 
 interface Copy {
@@ -38,13 +43,15 @@ interface Copy {
   footer: string;
   notFound: { title: string; text: string; back: string };
   gate: { title: string; description: string; lead: string; doorsHeading: string; doors: Door[] };
+  place: { title: string; description: string; heading: string; blocks: Block[] };
   projects: {
     title: string;
     description: string;
     heading: string;
     lead: string;
-    itemsHeading: string;
     items: Project[];
+    techHeading: string;
+    techText: string;
     more: string;
   };
   atfedi: {
@@ -68,7 +75,7 @@ export const copy: Record<Locale, Copy> = {
     loginNote: 'すでにアカウントがあるかたは、こちらから。',
     langSwitch: '한국어',
     navLabel: 'ページ',
-    nav: { gate: '玄関', projects: 'sukhi-social のこと', atfedi: 'atfedi.de とのこと' },
+    nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと' },
     footer: 'sukhi は、sukhi-social がつくっています。',
     notFound: {
       title: 'あれれ、ここには何もないみたいです',
@@ -81,30 +88,60 @@ export const copy: Record<Locale, Copy> = {
       lead: 'sukhi-social は、人があつまれて、さらっと立ち寄れる、和やかな場所です。ずっといても、ちょっと顔を出すだけでも、大丈夫。いそがず、ゆっくり見ていってください。',
       doorsHeading: 'どこから見ましょうか',
       doors: [
-        { key: 'projects', title: 'sukhi-social のこと', text: 'どんな場所なのか、いまなにをつくっているのかを書きました。' },
-        { key: 'atfedi', title: 'atfedi.de とのこと', text: 'フェディバースのカタログ atfedi.de と、sukhi のかんけいを書きました。' }
+        { key: 'place', title: 'sukhi-social のこと', text: 'どんな場所で、どんな気持ちでひらいているのかを、書きました。' },
+        { key: 'projects', title: 'プロジェクト', text: 'この場所のために、いまつくっているものを紹介します。' },
+        { key: 'atfedi', title: 'atfedi.de とのこと', text: '「はじめて」の人のための道案内、atfedi.de と sukhi のかんけいです。' }
+      ]
+    },
+    place: {
+      title: 'sukhi-social のこと — sukhi',
+      description: 'sukhi-social は、人があつまれて、さらっと立ち寄れる、和やかな場所です。',
+      heading: 'sukhi-social のこと',
+      blocks: [
+        {
+          heading: 'どんな場所？',
+          text: [
+            'sukhi-social は、人があつまれて、さらっと立ち寄れる、和やかな場所です。',
+            'ずっといてもいいし、ちょっと顔を出すだけでもいい。どちらも、ここでは「ふつう」です。'
+          ]
+        },
+        {
+          heading: '大切にしていること',
+          text: [
+            'あたたかく、いそがないこと。わからなくても、まよっても、大丈夫なこと。',
+            '「あたたかいみんなといっしょに」が、いちばん最初の約束です。'
+          ]
+        },
+        {
+          heading: 'どこにあるの？',
+          text: [
+            'これから、sukhi.social でひらく予定です。はじめて来た人も、ここ(about)で様子を見てから、ログインできます。',
+            'sukhi は「フェディバース」の仲間です。フェディバースは、いろいろな SNS やサービスが、おたがいにつながっている世界のこと。むずかしい知識は、いりません。'
+          ]
+        }
       ]
     },
     projects: {
-      title: 'sukhi-social のこと — sukhi',
-      description: 'sukhi-social という場所と、いまつくっているものの紹介です。',
-      heading: 'sukhi-social のこと',
-      lead: 'sukhi-social は、人があつまれて、さらっと訪ねられる、和やかな空間をつくっている GitHub の組織です。ここは、その入口です。つくっているものは、ぜんぶ公開していて、だれでも読めます。',
-      itemsHeading: 'いま、つくっているもの',
+      title: 'プロジェクト — sukhi',
+      description: 'sukhi-social が、この場所のためにつくっているものの紹介です。',
+      heading: 'プロジェクト',
+      lead: 'この場所を支えるために、sukhi-social ではいろいろなものをつくっています。ぜんぶ公開していて、だれでも中を見られます。むずかしそうに見えたら、ひとことの説明だけ読んでもらえれば大丈夫です。',
       items: [
-        { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'この場所の土台にするソフトウェア。Mastodon / Misskey の API と互換性のある、フェディバースの SNS サーバー。' },
-        { name: 'atfedi.de', href: ATFEDI_URL, text: 'フェディバースのツールを集めたカタログ。くわしくは「atfedi.de とのこと」で。' },
-        { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Misskey / Mastodon / Bluesky などの API クライアントを、ひとつの生成器から作る試み。' },
-        { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'Elixir 向けの、署名と JSON-LD のライブラリ。' }
+        { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'sukhi.social を動かす、SNS のしくみ(ソフトウェア)。Mastodon や Misskey のアプリとも、つなぎやすいようにつくっています。' },
+        { name: 'atfedi.de', href: ATFEDI_URL, text: 'フェディバースの道具を集めた案内所。くわしくは「atfedi.de とのこと」で。' },
+        { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Misskey や Mastodon などの SNS につなぐアプリを、つくりやすくするための部品づくり。' },
+        { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'SNS どうしがやりとりするときの「署名」など、裏方のしくみを扱う部品(Elixir という言語向け)。' }
       ],
+      techHeading: 'プログラムが読めるかたへ',
+      techText: 'ソースコードは GitHub で公開しています。気になるものがあれば、のぞいてみてください。',
       more: 'GitHub で ぜんぶ見る'
     },
     atfedi: {
       title: 'atfedi.de とのこと — sukhi',
-      description: 'フェディバースのツールのカタログ atfedi.de と、sukhi のかんけいについて。',
+      description: 'フェディバースの道具の案内所 atfedi.de と、sukhi のかんけいについて。',
       heading: 'atfedi.de とのこと',
       what: [
-        'atfedi.de は、フェディバースのツールを集めた、開かれたカタログです。はじめてフェディバースに来た人に向けて、やさしく案内しています。',
+        'atfedi.de は、フェディバースで使える道具を集めた、開かれた案内所(カタログ)です。はじめてフェディバースに来た人に向けて、やさしく案内しています。',
         'まよっても、まだよく知らなくても大丈夫。ここには、いそいでいる人はいません。そんな気持ちで、つくっています。'
       ],
       facts: [
@@ -130,7 +167,7 @@ export const copy: Record<Locale, Copy> = {
     loginNote: '이미 계정이 있다면 여기로 오세요.',
     langSwitch: '日本語',
     navLabel: '페이지',
-    nav: { gate: '현관', projects: 'sukhi-social 이야기', atfedi: 'atfedi.de 이야기' },
+    nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기' },
     footer: 'sukhi는 sukhi-social이 만들고 있어요.',
     notFound: {
       title: '어라, 여기엔 아무것도 없는 것 같아요',
@@ -143,30 +180,60 @@ export const copy: Record<Locale, Copy> = {
       lead: 'sukhi-social은 사람들이 모일 수 있고, 가볍게 들를 수도 있는 포근한 공간이에요. 오래 머물러도, 잠깐 얼굴만 비춰도 괜찮아요. 서두르지 말고 천천히 둘러보세요.',
       doorsHeading: '어디부터 볼까요',
       doors: [
-        { key: 'projects', title: 'sukhi-social 이야기', text: '어떤 공간인지, 지금 무엇을 만들고 있는지 적었어요.' },
-        { key: 'atfedi', title: 'atfedi.de 이야기', text: '페디버스 카탈로그 atfedi.de와 sukhi의 관계를 적었어요.' }
+        { key: 'place', title: 'sukhi-social 이야기', text: '어떤 공간이고, 어떤 마음으로 열고 있는지 적었어요.' },
+        { key: 'projects', title: '프로젝트', text: '이 공간을 위해 지금 만들고 있는 것들을 소개해요.' },
+        { key: 'atfedi', title: 'atfedi.de 이야기', text: '‘처음’인 분들을 위한 길잡이 atfedi.de와 sukhi의 관계예요.' }
+      ]
+    },
+    place: {
+      title: 'sukhi-social 이야기 — sukhi',
+      description: 'sukhi-social은 사람들이 모이고 가볍게 들를 수 있는 포근한 공간이에요.',
+      heading: 'sukhi-social 이야기',
+      blocks: [
+        {
+          heading: '어떤 공간인가요?',
+          text: [
+            'sukhi-social은 사람들이 모일 수 있고, 가볍게 들를 수도 있는 포근한 공간이에요.',
+            '오래 머물러도 좋고, 잠깐 얼굴만 비춰도 좋아요. 여기서는 둘 다 ‘보통’이에요.'
+          ]
+        },
+        {
+          heading: '소중히 여기는 것',
+          text: [
+            '따뜻하게, 서두르지 않는 것. 잘 몰라도, 헤매도 괜찮다는 것.',
+            '‘따뜻한 사람들과 함께’가 가장 처음의 약속이에요.'
+          ]
+        },
+        {
+          heading: '어디에 있나요?',
+          text: [
+            '앞으로 sukhi.social에서 열 예정이에요. 처음 온 분도 여기(about)에서 분위기를 보고 나서 로그인할 수 있어요.',
+            'sukhi는 ‘페디버스’의 친구예요. 페디버스는 여러 SNS와 서비스가 서로 이어져 있는 세계를 말해요. 어려운 지식은 필요 없어요.'
+          ]
+        }
       ]
     },
     projects: {
-      title: 'sukhi-social 이야기 — sukhi',
-      description: 'sukhi-social이라는 공간과 지금 만들고 있는 것을 소개해요.',
-      heading: 'sukhi-social 이야기',
-      lead: 'sukhi-social은 사람들이 모이고 가볍게 들를 수 있는 포근한 공간을 만들고 있는 GitHub 조직이에요. 여기는 그 입구예요. 만들고 있는 것은 모두 공개되어 있어서 누구나 읽을 수 있어요.',
-      itemsHeading: '지금 만들고 있는 것',
+      title: '프로젝트 — sukhi',
+      description: 'sukhi-social이 이 공간을 위해 만들고 있는 것들을 소개해요.',
+      heading: '프로젝트',
+      lead: '이 공간을 받쳐 주려고 sukhi-social에서는 여러 가지를 만들고 있어요. 모두 공개되어 있어서 누구나 안을 볼 수 있어요. 어려워 보이면 한 줄 설명만 읽어도 괜찮아요.',
       items: [
-        { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: '이 공간의 토대로 쓸 소프트웨어예요. Mastodon / Misskey API와 호환되는 페디버스 SNS 서버예요.' },
-        { name: 'atfedi.de', href: ATFEDI_URL, text: '페디버스 도구를 모아 둔 카탈로그예요. 자세한 이야기는 ‘atfedi.de 이야기’에서 해요.' },
-        { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Misskey / Mastodon / Bluesky 등의 API 클라이언트를 하나의 생성기에서 만드는 시도예요.' },
-        { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'Elixir용 서명 및 JSON-LD 라이브러리예요.' }
+        { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'sukhi.social을 움직이는 SNS의 구조(소프트웨어)예요. Mastodon이나 Misskey 앱과도 쉽게 이어지도록 만들고 있어요.' },
+        { name: 'atfedi.de', href: ATFEDI_URL, text: '페디버스 도구를 모아 둔 안내소예요. 자세한 이야기는 ‘atfedi.de 이야기’에서 해요.' },
+        { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Misskey나 Mastodon 등 SNS에 연결하는 앱을 만들기 쉽게 해 주는 부품을 만들고 있어요.' },
+        { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'SNS끼리 주고받을 때 쓰는 ‘서명’ 같은 뒷일을 맡는 부품이에요(Elixir 언어용).' }
       ],
+      techHeading: '프로그램을 읽을 수 있는 분께',
+      techText: '소스 코드는 GitHub에 공개되어 있어요. 궁금한 게 있으면 들여다보세요.',
       more: 'GitHub에서 모두 보기'
     },
     atfedi: {
       title: 'atfedi.de 이야기 — sukhi',
-      description: '페디버스 도구 카탈로그 atfedi.de와 sukhi의 관계에 대해서.',
+      description: '페디버스 도구 안내소 atfedi.de와 sukhi의 관계에 대해서.',
       heading: 'atfedi.de 이야기',
       what: [
-        'atfedi.de는 페디버스 도구를 모아 둔 열린 카탈로그예요. 페디버스에 처음 온 분들을 위해 부드럽게 안내해요.',
+        'atfedi.de는 페디버스에서 쓸 수 있는 도구를 모아 둔 열린 안내소(카탈로그)예요. 페디버스에 처음 온 분들을 위해 부드럽게 안내해요.',
         '헤매도, 아직 잘 몰라도 괜찮아요. 여기에는 서두르는 사람이 없어요. 그런 마음으로 만들고 있어요.'
       ],
       facts: [

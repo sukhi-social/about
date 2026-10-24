@@ -10,11 +10,12 @@ const c = copy[locale].projects;
 <Page locale={locale} page="projects" title={c.title} description={c.description}>
   <h1 class="plain">{c.heading}</h1>
   <p>{c.lead}</p>
-  <h2>{c.itemsHeading}</h2>
   <ul class="cards">
     {c.items.map((p) => (
       <li><a href={p.href}><strong>{p.name}</strong><span>{p.text}</span></a></li>
     ))}
   </ul>
+  <h2>{c.techHeading}</h2>
+  <p>{c.techText}</p>
   <p><a class="more" href={ORG_URL}>{c.more} →</a></p>
 </Page>

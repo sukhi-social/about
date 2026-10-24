@@ -1,0 +1,18 @@
+---
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import Page from './Page.astro';
+import { copy, type Locale } from '../content';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const c = copy[locale].place;
+---
+
+<Page locale={locale} page="place" title={c.title} description={c.description}>
+  <h1 class="plain">{c.heading}</h1>
+  {c.blocks.map((b) => (
+    <section>
+      <h2>{b.heading}</h2>
+      {b.text.map((t) => <p>{t}</p>)}
+    </section>
+  ))}
+</Page>
