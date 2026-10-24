@@ -1,0 +1,28 @@
+---
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import Page from './Page.astro';
+import { copy, type Locale } from '../content';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const c = copy[locale].support;
+---
+
+<Page locale={locale} page="support" title={c.title} description={c.description}>
+  <h1 class="plain">{c.heading}</h1>
+  {c.thanks.map((t) => <p>{t}</p>)}
+
+  <h2>{c.donateHeading}</h2>
+  <ul class="cards">
+    {c.donate.map((d) => (
+      <li><a href={d.href} rel="noopener"><strong>{d.name}</strong>{d.note && <span>{d.note}</span>}</a></li>
+    ))}
+  </ul>
+
+  <h2>{c.reachHeading}</h2>
+  <p>{c.reachText}</p>
+  <ul class="facts">
+    {c.reach.map((r) => (
+      <li>{r.label}: {r.href ? <a href={r.href}>{r.value}</a> : <code>{r.value}</code>}</li>
+    ))}
+  </ul>
+</Page>

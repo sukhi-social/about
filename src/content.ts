@@ -11,8 +11,15 @@ export const ORG_URL = 'https://github.com/sukhi-social';
 export const FEDI_REPO_URL = 'https://github.com/sukhi-social/sukhi-fedi';
 export const ATFEDI_URL = 'https://atfedi.de';
 
+// 支援の受け口。sukhi-fedi の elixir/priv/legal/support.*.md と同じもの。
+const LIBERAPAY_URL = 'https://liberapay.com/sukhi-social/donate';
+const SPONSORS_URL = 'https://github.com/sponsors/nyanrus';
+const FAIRY_URL = 'https://fairy.hada.io/@sukhi-social';
+const CONTACT_MAIL = 'hinata@natadeco.com';
+const CONTACT_AP = '@kuro_admin@sukhi.f3liz.casa';
+
 export type Locale = 'ja' | 'ko';
-export type PageKey = 'gate' | 'place' | 'projects' | 'atfedi';
+export type PageKey = 'gate' | 'place' | 'projects' | 'atfedi' | 'support';
 
 interface Project {
   name: string;
@@ -24,6 +31,12 @@ interface Door {
   key: Exclude<PageKey, 'gate'>;
   title: string;
   text: string;
+}
+
+interface Link {
+  name: string;
+  href: string;
+  note?: string;
 }
 
 interface Block {
@@ -53,6 +66,17 @@ interface Copy {
     techText: string;
     more: string;
   };
+  support: {
+    title: string;
+    description: string;
+    heading: string;
+    thanks: string[];
+    donateHeading: string;
+    donate: Link[];
+    reachHeading: string;
+    reachText: string;
+    reach: { label: string; value: string; href?: string }[];
+  };
   atfedi: {
     title: string;
     description: string;
@@ -73,7 +97,7 @@ export const copy: Record<Locale, Copy> = {
     login: 'ログイン',
     langSwitch: '한국어',
     navLabel: 'ページ',
-    nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと' },
+    nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと', support: '支援' },
     footer: 'sukhi は、sukhi-social がつくっています。',
     notFound: {
       title: 'あれれ、ここには何もないみたいです',
@@ -88,7 +112,8 @@ export const copy: Record<Locale, Copy> = {
       doors: [
         { key: 'place', title: 'sukhi-social のこと', text: 'どんな場所で、どんな気持ちでひらいているのかを、書きました。' },
         { key: 'projects', title: 'プロジェクト', text: 'この場所のために、いまつくっているものを紹介します。' },
-        { key: 'atfedi', title: 'atfedi.de とのこと', text: '「はじめて」の人のための道案内、atfedi.de と sukhi のかんけいです。' }
+        { key: 'atfedi', title: 'atfedi.de とのこと', text: '「はじめて」の人のための道案内、atfedi.de と sukhi のかんけいです。' },
+        { key: 'support', title: '支援', text: 'sukhi を続けていくための、あたたかいお気持ちの受け口です。' }
       ]
     },
     place: {
@@ -134,6 +159,27 @@ export const copy: Record<Locale, Copy> = {
       techText: 'ソースコードは GitHub で公開しています。気になるものがあれば、のぞいてみてください。',
       more: 'GitHub で ぜんぶ見る'
     },
+    support: {
+      title: '支援 — sukhi',
+      description: 'sukhi を続けていくための、寄付やおたよりの受け口です。',
+      heading: '支援',
+      thanks: [
+        'sukhi に関心を寄せていただき、ありがとうございます。',
+        'いただいたお気持ちは、sukhi を続けていくために、大切に使わせてもらいます。むりのない、できるときだけで、大丈夫です。'
+      ],
+      donateHeading: '寄付',
+      donate: [
+        { name: 'Liberapay', href: LIBERAPAY_URL },
+        { name: 'GitHub Sponsors', href: SPONSORS_URL },
+        { name: 'Fairy by hada.io', href: FAIRY_URL, note: '韓国の方向けです。' }
+      ],
+      reachHeading: 'おたよりも、うれしいです',
+      reachText: '寄付のかわりに、ひとこと届けてもらうのも、大きな助けになります。',
+      reach: [
+        { label: 'メール', value: CONTACT_MAIL, href: `mailto:${CONTACT_MAIL}` },
+        { label: 'ActivityPub', value: CONTACT_AP }
+      ]
+    },
     atfedi: {
       title: 'atfedi.de とのこと — sukhi',
       description: 'フェディバースの道具の案内所 atfedi.de と、sukhi のかんけいについて。',
@@ -164,7 +210,7 @@ export const copy: Record<Locale, Copy> = {
     login: '로그인',
     langSwitch: '日本語',
     navLabel: '페이지',
-    nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기' },
+    nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기', support: '후원' },
     footer: 'sukhi는 sukhi-social이 만들고 있어요.',
     notFound: {
       title: '어라, 여기엔 아무것도 없는 것 같아요',
@@ -179,7 +225,8 @@ export const copy: Record<Locale, Copy> = {
       doors: [
         { key: 'place', title: 'sukhi-social 이야기', text: '어떤 공간이고, 어떤 마음으로 열고 있는지 적었어요.' },
         { key: 'projects', title: '프로젝트', text: '이 공간을 위해 지금 만들고 있는 것들을 소개해요.' },
-        { key: 'atfedi', title: 'atfedi.de 이야기', text: '‘처음’인 분들을 위한 길잡이 atfedi.de와 sukhi의 관계예요.' }
+        { key: 'atfedi', title: 'atfedi.de 이야기', text: '‘처음’인 분들을 위한 길잡이 atfedi.de와 sukhi의 관계예요.' },
+        { key: 'support', title: '후원', text: 'sukhi를 이어 가기 위한 따뜻한 마음을 받는 곳이에요.' }
       ]
     },
     place: {
@@ -224,6 +271,27 @@ export const copy: Record<Locale, Copy> = {
       techHeading: '프로그램을 읽을 수 있는 분께',
       techText: '소스 코드는 GitHub에 공개되어 있어요. 궁금한 게 있으면 들여다보세요.',
       more: 'GitHub에서 모두 보기'
+    },
+    support: {
+      title: '후원 — sukhi',
+      description: 'sukhi를 이어 가기 위한 후원과 응원의 창구예요.',
+      heading: '후원',
+      thanks: [
+        'sukhi에 관심을 가져 주셔서 감사해요.',
+        '보내 주신 마음은 sukhi를 이어 가는 데 소중하게 쓸게요. 무리하지 않는 선에서, 할 수 있을 때만으로 괜찮아요.'
+      ],
+      donateHeading: '후원하기',
+      donate: [
+        { name: 'Liberapay', href: LIBERAPAY_URL },
+        { name: 'GitHub Sponsors', href: SPONSORS_URL },
+        { name: 'Fairy by hada.io', href: FAIRY_URL, note: '한국에 계신 분들을 위한 창구예요.' }
+      ],
+      reachHeading: '응원의 한마디도 기뻐요',
+      reachText: '후원 대신 한마디를 보내 주시는 것도 큰 힘이 돼요.',
+      reach: [
+        { label: '메일', value: CONTACT_MAIL, href: `mailto:${CONTACT_MAIL}` },
+        { label: 'ActivityPub', value: CONTACT_AP }
+      ]
     },
     atfedi: {
       title: 'atfedi.de 이야기 — sukhi',

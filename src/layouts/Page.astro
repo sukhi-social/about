@@ -21,7 +21,7 @@ const base = locale === 'ja' ? '/' : '/ko/';
 const path = (k: PageKey) => (k === 'gate' ? base : `${base}${k}/`);
 const otherBase = locale === 'ja' ? '/ko/' : '/';
 const otherPath = page === 'gate' ? otherBase : `${otherBase}${page}/`;
-const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi'];
+const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
 ---
 
 <!doctype html>
