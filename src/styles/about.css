@@ -91,3 +91,5 @@ main { min-height: 50vh; }
 
 /* 韓国語(Gothic A1)は、字間をつめて(-0.03em)、行間を 1.6 に。 */
 html:lang(ko) body { letter-spacing: -0.03em; line-height: 1.6; }
+/* いちばん小さい本文(カードの説明・フッター)だけ、少しゆるめる。 */
+html:lang(ko) .cards span, html:lang(ko) footer { letter-spacing: -0.025em; }
