@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@fontsource/gowun-dodum':
+      '@fontsource/gothic-a1':
         specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/nunito':
@@ -257,8 +257,8 @@ packages:
   '@emnapi/wasi-threads@1.2.3':
     resolution: {integrity: sha512-ELEBe8PsLvvJ6QMr0zLt8ffvOHW/dc1m3CEzNMg7aJUv3bMaoDtw2TXyDAwkYBuroxxuHEwhRTLJSe5sya547g==}
 
-  '@fontsource/gowun-dodum@5.3.0':
-    resolution: {integrity: sha512-1ToMkUzML1E0TIpvV81t1geh+1npARWbdTPwCDZZwqQxD1p/HnngbjOwiXe8Y+gkhlRThyl/HiNgY9fCMpm9OQ==}
+  '@fontsource/gothic-a1@5.3.0':
+    resolution: {integrity: sha512-0HmmE3YQgdcXkVZd/pRTw7MOc9PffY7tNrR/dovEGO00cno/4ImiHxEXdJoq80Bs2jC52wuvuFRcepJ38mksEw==}
 
   '@fontsource/nunito@5.3.0':
     resolution: {integrity: sha512-vw9TaTQJ/zpEpKrsODuPmOvaVjXgdda6B+xXA4YqjrdeJ62MLgVoDerdRXFQHyBnSCt2yQ2nHKCHPP/Pv7Xq4Q==}
@@ -1819,7 +1819,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@fontsource/gowun-dodum@5.3.0': {}
+  '@fontsource/gothic-a1@5.3.0': {}
 
   '@fontsource/nunito@5.3.0': {}
 

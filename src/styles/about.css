@@ -25,7 +25,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 1rem/1.9 'Nunito', 'Zen Maru Gothic', 'Gowun Dodum', system-ui, 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+  font: 1rem/1.9 'Nunito', 'Zen Maru Gothic', 'Gothic A1', system-ui, 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
   font-synthesis: none;
   word-break: keep-all;
   overflow-wrap: anywhere;
@@ -88,5 +88,3 @@ main { min-height: 50vh; }
 /* ── 右上: 言語とログイン ── */
 .bar .right { display: flex; align-items: center; gap: 1rem; }
 .button.small { padding: 0.3rem 1.1rem; font-size: 0.9rem; line-height: 1.7; }
-/* 韓国語の本文用フォント(Gowun Dodum)は太字がないので、見出しも標準の太さで、大きさでめりはりを出す。 */
-:lang(ko) h1, :lang(ko) h2, :lang(ko) strong, :lang(ko) .mark { font-weight: 400; }
