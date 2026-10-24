@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/gowun-dodum':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/nunito':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@fontsource/zen-maru-gothic':
+        specifier: ^5.3.1
+        version: 5.3.1
       astro:
         specifier: ^7.4.2
         version: 7.4.2(yaml@2.9.1)
@@ -247,6 +256,15 @@ packages:
 
   '@emnapi/wasi-threads@1.2.3':
     resolution: {integrity: sha512-ELEBe8PsLvvJ6QMr0zLt8ffvOHW/dc1m3CEzNMg7aJUv3bMaoDtw2TXyDAwkYBuroxxuHEwhRTLJSe5sya547g==}
+
+  '@fontsource/gowun-dodum@5.3.0':
+    resolution: {integrity: sha512-1ToMkUzML1E0TIpvV81t1geh+1npARWbdTPwCDZZwqQxD1p/HnngbjOwiXe8Y+gkhlRThyl/HiNgY9fCMpm9OQ==}
+
+  '@fontsource/nunito@5.3.0':
+    resolution: {integrity: sha512-vw9TaTQJ/zpEpKrsODuPmOvaVjXgdda6B+xXA4YqjrdeJ62MLgVoDerdRXFQHyBnSCt2yQ2nHKCHPP/Pv7Xq4Q==}
+
+  '@fontsource/zen-maru-gothic@5.3.1':
+    resolution: {integrity: sha512-DtDKg44WTu44VuUWIJq8oAdCMHkkKrlpUaYHPbBQQkr8eZUNUjdWtzTJM3QIVlYYqdUPZN0Oy2a20EbxPJnF/g==}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -1800,6 +1818,12 @@ snapshots:
   '@emnapi/wasi-threads@1.2.3':
     dependencies:
       tslib: 2.8.1
+
+  '@fontsource/gowun-dodum@5.3.0': {}
+
+  '@fontsource/nunito@5.3.0': {}
+
+  '@fontsource/zen-maru-gothic@5.3.1': {}
 
   '@img/colour@1.1.0':
     optional: true

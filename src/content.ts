@@ -36,7 +36,6 @@ interface Copy {
   siteName: string;
   slogan: string;
   login: string;
-  loginNote: string;
   langSwitch: string;
   navLabel: string;
   nav: Record<PageKey, string>;
@@ -72,7 +71,6 @@ export const copy: Record<Locale, Copy> = {
     siteName: 'sukhi',
     slogan: 'あたたかいみんなといっしょに',
     login: 'ログイン',
-    loginNote: 'すでにアカウントがあるかたは、こちらから。',
     langSwitch: '한국어',
     navLabel: 'ページ',
     nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと' },
@@ -164,7 +162,6 @@ export const copy: Record<Locale, Copy> = {
     siteName: 'sukhi',
     slogan: '따뜻한 사람들과 함께',
     login: '로그인',
-    loginNote: '이미 계정이 있다면 여기로 오세요.',
     langSwitch: '日本語',
     navLabel: '페이지',
     nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기' },

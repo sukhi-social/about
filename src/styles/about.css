@@ -25,7 +25,8 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 1rem/1.9 system-ui, 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+  font: 1rem/1.9 'Nunito', 'Zen Maru Gothic', 'Gowun Dodum', system-ui, 'Hiragino Sans', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+  font-synthesis: none;
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -35,7 +36,7 @@ main, .bar, footer { max-width: var(--measure); margin-inline: auto; padding-inl
 .mark { font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--text); }
 .bar nav a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
 .hero { padding-block: 3.5rem 2.5rem; }
-h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); line-height: 1.4; margin: 0 0 1rem; }
+h1 { font-size: clamp(1.3rem, 5.4vw, 2.4rem); line-height: 1.4; margin: 0 0 1rem; text-wrap: balance; }
 h2 { font-size: 1.3rem; margin: 3rem 0 0.75rem; }
 .lead { color: var(--muted); margin: 0 0 1.5rem; }
 .login { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; }
@@ -83,3 +84,9 @@ main { min-height: 50vh; }
   .cards a, .button { transition: none; }
   .cards a:hover, .button:hover { transform: none; }
 }
+
+/* ── 右上: 言語とログイン ── */
+.bar .right { display: flex; align-items: center; gap: 1rem; }
+.button.small { padding: 0.3rem 1.1rem; font-size: 0.9rem; line-height: 1.7; }
+/* 韓国語の本文用フォント(Gowun Dodum)は太字がないので、見出しも標準の太さで、大きさでめりはりを出す。 */
+:lang(ko) h1, :lang(ko) h2, :lang(ko) strong, :lang(ko) .mark { font-weight: 400; }

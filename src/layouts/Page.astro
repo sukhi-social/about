@@ -1,7 +1,12 @@
 ---
 // SPDX-License-Identifier: AGPL-3.0-or-later
+import '@fontsource/nunito/latin-400.css';
+import '@fontsource/nunito/latin-700.css';
+import '@fontsource/zen-maru-gothic/japanese-400.css';
+import '@fontsource/zen-maru-gothic/japanese-700.css';
+import '@fontsource/gowun-dodum/korean-400.css';
 import '../styles/about.css';
-import { copy, ORG_URL, type Locale, type PageKey } from '../content';
+import { copy, LOGIN_URL, ORG_URL, type Locale, type PageKey } from '../content';
 
 interface Props {
   locale: Locale;
@@ -32,7 +37,10 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi'];
   <body>
     <header class="bar">
       <a class="mark" href={base}>{c.siteName}</a>
-      <a class="lang" href={otherPath} hreflang={locale === 'ja' ? 'ko' : 'ja'}>{c.langSwitch}</a>
+      <div class="right">
+        <a class="lang" href={otherPath} hreflang={locale === 'ja' ? 'ko' : 'ja'}>{c.langSwitch}</a>
+        <a class="button small" href={LOGIN_URL}>{c.login}</a>
+      </div>
     </header>
     <nav class="tabs" aria-label={c.navLabel}>
       {keys.map((k) => <a href={path(k)} aria-current={k === page ? 'page' : undefined}>{c.nav[k]}</a>)}
