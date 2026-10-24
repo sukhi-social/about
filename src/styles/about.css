@@ -88,3 +88,6 @@ main { min-height: 50vh; }
 /* ── 右上: 言語とログイン ── */
 .bar .right { display: flex; align-items: center; gap: 1rem; }
 .button.small { padding: 0.3rem 1.1rem; font-size: 0.9rem; line-height: 1.7; }
+
+/* 韓国語(Gothic A1)は、字間をほんの少しつめて、行間を 1.6 に。 */
+html:lang(ko) body { letter-spacing: -0.02em; line-height: 1.6; }
