@@ -128,5 +128,28 @@ footer .blessing { text-align: right; letter-spacing: normal; font-weight: 700; 
 }
 .lang-picker li a:hover { background: var(--accent-soft); }
 .lang-picker li a[aria-current='true'] { font-weight: 700; color: var(--accent); }
-.lang-picker .check { display: inline-block; width: 1em; text-align: center; }
+.lang-picker .check {
+  display: inline-grid; place-items: center; flex: none; width: 1.4rem; height: 1.4rem; border-radius: 50%;
+  background: transparent; color: var(--accent);
+}
+.lang-picker li a[aria-current='true'] .check { background: var(--accent-soft); }
 .lost section:lang(en) { letter-spacing: normal; }
+
+/* ── 言語のおすすめ(そっと出す) ── */
+.lang-suggest {
+  max-width: calc(var(--measure) - 2.5rem); width: calc(100% - 2.5rem); margin: 0.5rem auto 0; padding: 0.5rem 0.6rem 0.5rem 1rem;
+  display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+  background: var(--accent-soft); border-radius: 1rem; font-size: 0.92rem; letter-spacing: normal;
+}
+.lang-suggest[hidden] { display: none; }
+.lang-suggest p { margin: 0; flex: 1 1 auto; line-height: 1.6; }
+.lang-suggest .go {
+  padding: 0.2rem 0.9rem; border-radius: 999px; background: var(--surface); color: var(--accent);
+  text-decoration: none; font-weight: 700; border: 1px solid var(--border);
+}
+.lang-suggest .go:hover { border-color: var(--accent); }
+.lang-suggest .close {
+  display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border: 0; border-radius: 50%;
+  background: transparent; color: var(--muted); cursor: pointer;
+}
+.lang-suggest .close:hover { background: var(--surface); }

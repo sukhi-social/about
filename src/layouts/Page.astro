@@ -3,6 +3,7 @@
 import './fonts';
 import '../styles/about.css';
 import LangPicker from './LangPicker.astro';
+import LangSuggest from './LangSuggest.astro';
 import { BASES, LOCALES, copy, LOGIN_URL, ORG_URL, SHOW_LOGIN, type Locale, type PageKey } from '../content';
 
 interface Props {
@@ -37,6 +38,7 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
         {SHOW_LOGIN && <a class="button small" href={LOGIN_URL}>{c.login}</a>}
       </div>
     </header>
+    <LangSuggest locale={locale} />
     <nav class="tabs" aria-label={c.navLabel}>
       {keys.map((k) => <a href={path(k)} aria-current={k === page ? 'page' : undefined}>{c.nav[k]}</a>)}
     </nav>

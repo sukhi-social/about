@@ -24,7 +24,11 @@ const current = LOCALES.find((l) => l.code === locale)!;
     {LOCALES.map((l) => (
       <li>
         <a href={hrefFor(l.code)} lang={l.code} hreflang={l.code} aria-current={l.code === locale ? 'true' : undefined}>
-          <span class="check" aria-hidden="true">{l.code === locale ? '✓' : ''}</span>{l.name}
+          <span class="check" aria-hidden="true">
+            {l.code === locale && (
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12.5l4 4 8-9" /></svg>
+            )}
+          </span>{l.name}
         </a>
       </li>
     ))}
@@ -33,6 +37,12 @@ const current = LOCALES.find((l) => l.code === locale)!;
 
 <script>
   document.querySelectorAll<HTMLDetailsElement>('.lang-picker').forEach((d) => {
+    // 自分でえらんだ言語は、おぼえておく(あとで言語のおすすめを出さないため)。
+    d.querySelectorAll<HTMLAnchorElement>('li a').forEach((a) => {
+      a.addEventListener('click', () => {
+        try { localStorage.setItem('sukhi.about.lang', a.hreflang); } catch {}
+      });
+    });
     document.addEventListener('click', (e) => {
       if (d.open && !d.contains(e.target as Node)) d.open = false;
     });

@@ -26,6 +26,14 @@ export type Locale = 'ja' | 'ko' | 'en';
 
 // 各言語の置き場所(日本語が正本で、ルート)と、その言語自身の文字での名前。
 export const BASES: Record<Locale, string> = { ja: '/', ko: '/ko/', en: '/en/' };
+// 言語のおすすめ(ブラウザの言語が、いまのページとちがうとき)。
+// 文は「すすめる言語」で書く。
+export const SUGGEST: Record<Locale, { text: string; go: string; close: string }> = {
+  ja: { text: '日本語でも読めます。', go: '日本語で見る', close: '閉じる' },
+  en: { text: 'This site is also available in English.', go: 'View in English', close: 'Close' },
+  ko: { text: '한국어로도 볼 수 있어요.', go: '한국어로 보기', close: '닫기' }
+};
+
 export const LOCALES: { code: Locale; name: string }[] = [
   { code: 'ja', name: '日本語' },
   { code: 'en', name: 'English' },
