@@ -52,17 +52,17 @@ export interface LicensesCopy {
 export const licensesCopy: Record<Locale, LicensesCopy> = {
   ja: {
     title: 'ライセンス — sukhi',
-    description: 'このサイトの内容のライセンス(CC BY 4.0)と、使わせてもらっているソフトウェアの展示室です。',
-    heading: 'ライセンスの、小さな展示室',
+    description: 'このサイトで使わせてもらっているフォントやソフトウェアと、「使っていいよ」の約束(ライセンス)を紹介する小さな展示室です。',
+    heading: 'こんなのを使ってるんだよー',
     intro:
-      'ここは、このサイトを支えてくれているものたちの、小さな展示室です。むずかしそうに見えても大丈夫。展示のパネルを読みながら、ふらっとまわってみてください。',
-    whatHeading: '展示 0　ライセンスって、なに？',
+      'このサイトは、たくさんのひとが「どうぞ使って」と渡してくれたものでできています。どんなものを使っているのか、小さな展示室にしてみました。むずかしそうに見えても大丈夫。ふらっとまわってみてください。',
+    whatHeading: '展示 5　「どうぞ使って」の約束、ライセンスって？',
     what: [
       'ソフトウェアには、作った人が書いた「つかいかたの約束」があります。それが、ライセンスです。',
       'たとえば「自由に使っていいよ。そのかわり、作った人の名前は残してね」のような約束です。',
       'ほとんどの約束は、とてもやさしいものです。このサイトも、たくさんの「どうぞ使って」のおかげで、できています。'
     ],
-    contentHeading: '展示 1　このサイトの、ことば',
+    contentHeading: '展示 3　このサイトのことばは、使ってね',
     content: [
       'このページの内容(文章など)は、CC BY 4.0 です。',
       '自由に写して、直して、わけあってかまいません。仕事に使っても大丈夫です。'
@@ -70,10 +70,10 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
     contentHow:
       'そのとき、「sukhi-social(about.sukhi.social)」という出どころを書いて、直したときは、直したと書いてください。それだけで、うれしいです。',
     contentLink: 'CC BY 4.0 のくわしい説明',
-    codeHeading: '展示 2　このサイトの、しくみ',
+    codeHeading: '展示 4　このサイトのしくみも、見てね',
     code: 'このサイトのソースコードは、AGPL-3.0-or-later のもとで、GitHub に公開しています。',
     codeLink: 'GitHub で見る',
-    fontsHeading: '展示 3　いま、あなたの画面に届いているフォント',
+    fontsHeading: '展示 1　いま、あなたの画面に届いているフォント',
     fonts: [
       'このページを開くと、3 つのフォントが届きます。見本を、それぞれの書体で並べてみました。',
       'フォントは、SIL Open Font License 1.1 のもとにあります。自由に使えて、配ることもできます。フォントだけを売ることは、できません。このサイトから直接とどけていて、Google Fonts のような外のサービスには、つながりません。'
@@ -84,7 +84,7 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
       '@fontsource/gothic-a1': { sample: '따뜻한 사람들과 함께', sampleLang: 'ko', note: '読みやすくて、すなおな韓国語のゴシック。' }
     },
     oflText: 'ライセンス全文(SIL Open Font License 1.1)',
-    toolsHeading: '展示 4　つくるための、道具たち',
+    toolsHeading: '展示 2　つくるための、道具たち',
     tools: [
       'ページをつくるときにだけ使う道具が、{n} 個あります。工房の道具箱のようなものです。',
       '道具は、できあがったページには入っていません。'
@@ -125,17 +125,17 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
   },
   en: {
     title: 'Licenses — sukhi',
-    description: "This site's content license (CC BY 4.0) and a small exhibit of the software it uses.",
-    heading: 'A small exhibit of licenses',
+    description: "A small exhibit of the fonts and software this site uses, and the promises (licenses) that come with them.",
+    heading: 'Here is what we use',
     intro:
-      'This is a small exhibit room for the things that hold this site up. It may look technical, but it is okay. Wander through, and read the panels as you go.',
-    whatHeading: 'Exhibit 0   What is a license?',
+      'This site is made of things that many people handed over saying "please, use this." Here is a small exhibit of what we use. It may look technical, but it is okay. Wander through at your own pace.',
+    whatHeading: 'Exhibit 5   What is a license, anyway?',
     what: [
       'Software comes with a "how you may use it" promise, written by the people who made it. That promise is called a license.',
       'For example: "Use it freely. Just keep the maker\'s name on it."',
       'Most of these promises are very kind. This site, too, exists because of a lot of people saying "please, go ahead."'
     ],
-    contentHeading: 'Exhibit 1   The words of this site',
+    contentHeading: 'Exhibit 3   Our words are yours to use',
     content: [
       'The content of this page (the text and so on) is CC BY 4.0.',
       'You may copy it, change it, and share it freely. Using it for work is fine, too.'
@@ -143,10 +143,10 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
     contentHow:
       'Please credit "sukhi-social (about.sukhi.social)" as the source, and say so if you changed it. That is all we ask, and it makes us happy.',
     contentLink: 'About CC BY 4.0',
-    codeHeading: 'Exhibit 2   How this site is built',
+    codeHeading: 'Exhibit 4   Come look at how it is built',
     code: 'The source code of this site is open on GitHub, under AGPL-3.0-or-later.',
     codeLink: 'See it on GitHub',
-    fontsHeading: 'Exhibit 3   The fonts that just reached your screen',
+    fontsHeading: 'Exhibit 1   The fonts that just reached your screen',
     fonts: [
       'Opening this page sends you three fonts. Here is a sample of each, in its own typeface.',
       'The fonts are under the SIL Open Font License 1.1. You can use and share them freely, but you cannot sell the fonts by themselves. They are served straight from this site, with no connection to outside services such as Google Fonts.'
@@ -157,7 +157,7 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
       '@fontsource/gothic-a1': { sample: '따뜻한 사람들과 함께', sampleLang: 'ko', note: 'A clear, honest gothic for Korean.' }
     },
     oflText: 'Full license text (SIL Open Font License 1.1)',
-    toolsHeading: 'Exhibit 4   The tools that build it',
+    toolsHeading: 'Exhibit 2   The tools that build it',
     tools: [
       'There are {n} tools used only while the pages are being made, like the tools in a workshop.',
       'None of them is part of the finished pages.'
@@ -198,17 +198,17 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
   },
   ko: {
     title: '라이선스 — sukhi',
-    description: '이 사이트 내용의 라이선스(CC BY 4.0)와, 쓰고 있는 소프트웨어의 작은 전시실이에요.',
-    heading: '라이선스 작은 전시실',
+    description: '이 사이트에서 쓰고 있는 글꼴과 소프트웨어, 그리고 "써도 좋아요"라는 약속(라이선스)을 소개하는 작은 전시실이에요.',
+    heading: '이런 걸 쓰고 있어요',
     intro:
-      '여기는 이 사이트를 받쳐 주는 것들을 모아 둔 작은 전시실이에요. 어려워 보여도 괜찮아요. 전시 패널을 읽으면서 천천히 둘러보세요.',
-    whatHeading: '전시 0　라이선스가 뭐예요?',
+      '이 사이트는 많은 분들이 "자, 써 보세요" 하고 건네준 것들로 만들어졌어요. 어떤 것들을 쓰고 있는지 작은 전시실로 꾸며 봤어요. 어려워 보여도 괜찮아요. 천천히 둘러보세요.',
+    whatHeading: '전시 5　"써도 좋아요"라는 약속, 라이선스가 뭐예요?',
     what: [
       '소프트웨어에는 만든 사람이 적어 둔 ‘쓰는 방법의 약속’이 있어요. 그것이 라이선스예요.',
       '예를 들면 “자유롭게 써도 좋아요. 대신 만든 사람의 이름은 남겨 주세요” 같은 약속이에요.',
       '대부분의 약속은 아주 다정해요. 이 사이트도 많은 “어서 쓰세요” 덕분에 만들어졌어요.'
     ],
-    contentHeading: '전시 1　이 사이트의 말',
+    contentHeading: '전시 3　이 사이트의 말은 써도 좋아요',
     content: [
       '이 페이지의 내용(글 등)은 CC BY 4.0이에요.',
       '자유롭게 복사하고 고치고 나눠도 괜찮아요. 일에 써도 괜찮아요.'
@@ -216,10 +216,10 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
     contentHow:
       '그때 ‘sukhi-social(about.sukhi.social)’이라는 출처를 적어 주시고, 고쳤을 때는 고쳤다고 적어 주세요. 그것만으로도 기뻐요.',
     contentLink: 'CC BY 4.0 자세히 보기',
-    codeHeading: '전시 2　이 사이트의 구조',
+    codeHeading: '전시 4　이 사이트의 구조도 보세요',
     code: '이 사이트의 소스 코드는 AGPL-3.0-or-later로 GitHub에 공개되어 있어요.',
     codeLink: 'GitHub에서 보기',
-    fontsHeading: '전시 3　지금 화면에 도착한 글꼴',
+    fontsHeading: '전시 1　지금 화면에 도착한 글꼴',
     fonts: [
       '이 페이지를 열면 글꼴 3개가 도착해요. 각각의 글꼴로 견본을 늘어놓아 봤어요.',
       '글꼴은 SIL Open Font License 1.1을 따라요. 자유롭게 쓰고 나눌 수 있지만, 글꼴만 따로 파는 것은 안 돼요. 이 사이트에서 바로 보내고, Google Fonts 같은 바깥 서비스에는 연결하지 않아요.'
@@ -230,7 +230,7 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
       '@fontsource/gothic-a1': { sample: '따뜻한 사람들과 함께', sampleLang: 'ko', note: '읽기 편하고 솔직한 한국어 고딕이에요.' }
     },
     oflText: '라이선스 전문(SIL Open Font License 1.1)',
-    toolsHeading: '전시 4　만들 때 쓰는 도구들',
+    toolsHeading: '전시 2　만들 때 쓰는 도구들',
     tools: [
       '페이지를 만들 때에만 쓰는 도구가 {n}개 있어요. 공방의 연장통 같은 거예요.',
       '도구는 완성된 페이지에는 들어 있지 않아요.'

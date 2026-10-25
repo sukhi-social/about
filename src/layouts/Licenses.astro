@@ -38,24 +38,6 @@ const n = (tpl: string, v: number) => tpl.replace('{n}', String(v));
   <p>{c.intro}</p>
 
   <section class="exhibit">
-    <h2>{c.whatHeading}</h2>
-    {c.what.map((t) => <p>{t}</p>)}
-  </section>
-
-  <section class="exhibit">
-    <h2>{c.contentHeading}</h2>
-    {c.content.map((t) => <p>{t}</p>)}
-    <p>{c.contentHow}</p>
-    <p><a class="more" href={CONTENT_LICENSE_URL[locale]} rel="license">{c.contentLink} →</a></p>
-  </section>
-
-  <section class="exhibit">
-    <h2>{c.codeHeading}</h2>
-    <p>{c.code}</p>
-    <p><a class="more" href={ABOUT_REPO_URL}>{c.codeLink} →</a></p>
-  </section>
-
-  <section class="exhibit">
     <h2>{c.fontsHeading}</h2>
     {c.fonts.map((t) => <p>{t}</p>)}
     <ul class="fontcards">
@@ -116,6 +98,24 @@ const n = (tpl: string, v: number) => tpl.replace('{n}', String(v));
         ))}
       </ul>
     </details>
+  </section>
+
+  <section class="exhibit">
+    <h2>{c.contentHeading}</h2>
+    {c.content.map((t) => <p>{t}</p>)}
+    <p>{c.contentHow}</p>
+    <p><a class="more" href={CONTENT_LICENSE_URL[locale]} rel="license">{c.contentLink} →</a></p>
+  </section>
+
+  <section class="exhibit">
+    <h2>{c.codeHeading}</h2>
+    <p>{c.code}</p>
+    <p><a class="more" href={ABOUT_REPO_URL}>{c.codeLink} →</a></p>
+  </section>
+
+  <section class="exhibit">
+    <h2>{c.whatHeading}</h2>
+    {c.what.map((t) => <p>{t}</p>)}
   </section>
 
   <p class="thanks">
