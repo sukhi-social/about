@@ -4,6 +4,7 @@
 import Page from './Page.astro';
 import { ABOUT_REPO_URL, type Locale } from '../content';
 import { CONTENT_LICENSE_URL, SOURCE_LICENSE, licensesCopy } from '../licenses-copy';
+import { CATEGORY_ORDER, categoryOf } from '../tool-categories';
 import deps from '../generated/licenses.json';
 
 interface Props { locale: Locale }
@@ -24,6 +25,11 @@ counts.set('CC-BY-4.0', 1);
 const panels = [...counts.entries()]
   .filter(([id]) => c.notes[id])
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+// 道具箱を役わりごとに。
+const groups = CATEGORY_ORDER.map((id) => ({
+  id,
+  tools: deps.build.filter((d) => categoryOf(d.name) === id)
+})).filter((g) => g.tools.length > 0);
 const n = (tpl: string, v: number) => tpl.replace('{n}', String(v));
 ---
 
@@ -75,25 +81,37 @@ const n = (tpl: string, v: number) => tpl.replace('{n}', String(v));
     <h2>{c.toolsHeading}</h2>
     {c.tools.map((t) => <p>{n(t, deps.build.length)}</p>)}
 
-    <h3>{c.readHeading}</h3>
-    <p>{c.readLead}</p>
-    <ul class="panels">
-      {panels.map(([id, count]) => (
+    <ul class="cats">
+      {groups.map((g) => (
         <li>
-          <p class="id"><strong>{simple(id) ? <a href={spdx(id)}>{id}</a> : id}</strong> <span class="count">{n(c.countLabel, count)}</span></p>
-          <p>{c.notes[id]}</p>
+          <details>
+            <summary>
+              <strong>{c.categories[g.id].name}</strong>
+              <span class="n">{n(c.countLabel, g.tools.length)}</span>
+            </summary>
+            <p class="desc">{c.categories[g.id].desc}</p>
+            <ul class="names">
+              {g.tools.map((d) => (
+                <li>
+                  <a href={d.href}>{d.name}</a> <span class="v">{d.version}</span>
+                  {simple(d.license) ? <a class="l" href={spdx(d.license)}>{d.license}</a> : <span class="l">{d.license}</span>}
+                  {d.copyright.length > 0 && <span class="c">{d.copyright.join(' / ')}</span>}
+                </li>
+              ))}
+            </ul>
+          </details>
         </li>
       ))}
     </ul>
 
     <details class="deps">
-      <summary>{c.allTools} <span class="n">{deps.build.length}</span></summary>
-      <ul class="names">
-        {deps.build.map((d) => (
+      <summary>{c.readHeading}</summary>
+      <p>{c.readLead}</p>
+      <ul class="panels">
+        {panels.map(([id, count]) => (
           <li>
-            <a href={d.href}>{d.name}</a> <span class="v">{d.version}</span>
-            {simple(d.license) ? <a class="l" href={spdx(d.license)}>{d.license}</a> : <span class="l">{d.license}</span>}
-            {d.copyright.length > 0 && <span class="c">{d.copyright.join(' / ')}</span>}
+            <p class="id"><strong>{simple(id) ? <a href={spdx(id)}>{id}</a> : id}</strong> <span class="count">{n(c.countLabel, count)}</span></p>
+            <p>{c.notes[id]}</p>
           </li>
         ))}
       </ul>

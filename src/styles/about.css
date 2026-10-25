@@ -184,3 +184,10 @@ ul.names .l.first { margin-inline-start: 0; }
 .panels li p:last-child { color: var(--muted); font-size: 0.95rem; }
 .fontcards .meta .v, .fontcards .meta .c, .fontcards .meta .l { margin-inline-start: 0.4rem; }
 .fontcards .meta .l.first { margin-inline-start: 0; }
+
+/* 道具箱: 役わりごとのたたみカード */
+.cats { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: 0.75rem; }
+.cats > li { background: var(--card, var(--accent-soft)); border: 1px solid var(--border); border-radius: 1rem; padding: 0.4rem 1rem; }
+.cats summary { cursor: pointer; padding: 0.55rem 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6rem; }
+.cats summary .n { background: var(--accent-soft); border-radius: 999px; padding: 0.05rem 0.7rem; font-size: 0.85rem; color: var(--muted); }
+.cats .desc { margin: 0.2rem 0 0.4rem; color: var(--muted); }

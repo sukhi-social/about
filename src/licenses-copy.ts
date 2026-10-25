@@ -4,6 +4,7 @@
 // 法律文書ではなく、はじめての人にも読める「展示パネル」。正確さのため、
 // ライセンスの説明は、各ライセンスの中心だけを、やさしく言い直している。
 import type { Locale } from './content';
+import type { ToolCategory } from './tool-categories';
 
 export const SOURCE_LICENSE = 'AGPL-3.0-or-later';
 export const CONTENT_LICENSE_URL: Record<Locale, string> = {
@@ -43,6 +44,7 @@ export interface LicensesCopy {
   countLabel: string;
   notes: Record<string, string>;
   allTools: string;
+  categories: Record<ToolCategory, { name: string; desc: string }>;
   footerContent: string;
   thanks: string[];
 }
@@ -106,6 +108,15 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
       'CC-BY-4.0': '自由に写して直して配れる。出どころを書いて、直したら、そう書くこと。'
     },
     allTools: 'ぜんぶの道具を見る',
+    categories: {
+      build: { name: 'ページを組み立てる', desc: 'Astro をはじめ、ページを一枚ずつ作って、ひとつにまとめる道具たち。工房でいうと、作業台です。' },
+      text: { name: 'ことばを読みとく', desc: '文章や記号を読んで、ページの形にする道具たち。色つきのコードの表示も、ここの仕事です。' },
+      style: { name: '見た目と画像をととのえる', desc: '色や形、画像の大きさをととのえる道具たち。' },
+      editor: { name: '書く人を助ける', desc: 'ページを作る人が、編集ソフトで書くときに、候補を出したり、まちがいを教えてくれたりする道具たち。' },
+      check: { name: 'まちがいを見つける', desc: '書いたものが正しいかを、公開の前に確かめる道具たち。' },
+      native: { name: '下で動く、小さな部品', desc: 'ほかの道具を速く動かすための、目立たない部品たち。' },
+      small: { name: 'こまごまとした道具', desc: '色をつける、文字の幅をはかる、順番を待つ、など。ひとつずつは小さくて、でもないと困る道具たち。' }
+    },
     footerContent: 'ページの内容は CC BY 4.0',
     thanks: [
       'この感謝は、譲渡できません。',
@@ -170,6 +181,15 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
       'CC-BY-4.0': 'Copy, change, and share freely. Credit the source, and say if you changed it.'
     },
     allTools: 'See every tool',
+    categories: {
+      build: { name: 'Putting pages together', desc: 'Astro and friends, which make each page and gather them into one site. The workbench of the workshop.' },
+      text: { name: 'Reading words', desc: 'Tools that read text and symbols and turn them into the shape of a page, including the colored display of code.' },
+      style: { name: 'Shaping looks and images', desc: 'Tools that tidy colors, shapes and the size of pictures.' },
+      editor: { name: 'Helping the writer', desc: 'Tools that suggest words and point out slips while someone writes the pages in an editor.' },
+      check: { name: 'Spotting mistakes', desc: 'Tools that check that what we wrote is right, before it goes out.' },
+      native: { name: 'Small parts underneath', desc: 'Quiet parts that help the other tools run fast.' },
+      small: { name: 'Little odds and ends', desc: 'Adding color, measuring text width, waiting in line, and so on. Each is small, and each is missed if gone.' }
+    },
     footerContent: 'Page content: CC BY 4.0',
     thanks: [
       'This thanks is non-transferable.',
@@ -234,6 +254,15 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
       'CC-BY-4.0': '자유롭게 복사하고 고치고 나눌 수 있어요. 출처를 적고, 고쳤다면 그렇다고 적을 것.'
     },
     allTools: '모든 도구 보기',
+    categories: {
+      build: { name: '페이지를 조립해요', desc: 'Astro를 비롯해, 페이지를 하나하나 만들어 하나의 사이트로 묶는 도구들이에요. 공방의 작업대 같은 곳이에요.' },
+      text: { name: '글을 읽어 풀어내요', desc: '글과 기호를 읽어 페이지의 모양으로 바꾸는 도구들이에요. 색이 입혀진 코드 표시도 여기서 맡아요.' },
+      style: { name: '모양과 이미지를 다듬어요', desc: '색과 모양, 그림의 크기를 다듬는 도구들이에요.' },
+      editor: { name: '쓰는 사람을 도와요', desc: '페이지를 만드는 사람이 편집기에서 쓸 때, 말을 추천하고 실수를 알려 주는 도구들이에요.' },
+      check: { name: '실수를 찾아요', desc: '쓴 것이 맞는지 공개하기 전에 확인하는 도구들이에요.' },
+      native: { name: '아래에서 움직이는 작은 부품', desc: '다른 도구가 빠르게 움직이도록 돕는, 눈에 띄지 않는 부품들이에요.' },
+      small: { name: '자잘한 도구들', desc: '색 입히기, 글자 너비 재기, 순서 기다리기 같은 것들이에요. 하나하나는 작지만, 없으면 아쉬운 도구들이에요.' }
+    },
     footerContent: '페이지 내용은 CC BY 4.0',
     thanks: [
       '이 감사는 양도할 수 없습니다.',
