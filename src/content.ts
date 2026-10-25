@@ -168,7 +168,7 @@ export const copy: Record<Locale, Copy> = {
       lead: 'この場所を支えるために、sukhi-social ではいろいろなものをつくっています。ぜんぶ公開していて、だれでも中を見られます。むずかしそうに見えたら、ひとことの説明だけ読んでもらえれば大丈夫です。',
       items: [
         { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'sukhi.social を動かす、SNS のしくみ(ソフトウェア)。Mastodon や Misskey のアプリとも、つなぎやすいようにつくっています。' },
-        { name: 'atfedi.de', href: ATFEDI_URL, text: 'フェディバースの道具を集めた案内所。くわしくは「atfedi.de とのこと」で。' },
+        { name: 'atfedi.de', href: ATFEDI_URL, text: 'フェディバースの、はじめてのガイド。道具のカタログもあります。くわしくは「atfedi.de とのこと」で。' },
         { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Misskey や Mastodon などの SNS につなぐアプリを、つくりやすくするための部品づくり。' },
         { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'SNS どうしがやりとりするときの「署名」など、裏方のしくみを扱う部品(Elixir という言語向け)。' }
       ],
@@ -199,21 +199,21 @@ export const copy: Record<Locale, Copy> = {
     },
     atfedi: {
       title: 'atfedi.de とのこと — sukhi',
-      description: 'フェディバースの道具の案内所 atfedi.de と、sukhi のかんけいについて。',
+      description: 'フェディバースの、はじめてのガイド atfedi.de と、sukhi のかんけいについて。',
       heading: 'atfedi.de とのこと',
       what: [
-        'atfedi.de は、フェディバースで使える道具を集めた、開かれた案内所(カタログ)です。はじめてフェディバースに来た人に向けて、やさしく案内しています。',
+        'atfedi.de は、フェディバースの、はじめてのガイドです。「フェディバースって何？」から、使うための道具、つくる人のための道具まで、はじめて来た人にやさしく案内しています。道具のカタログも入っています。',
         'まよっても、まだよく知らなくても大丈夫。ここには、いそいでいる人はいません。そんな気持ちで、つくっています。'
       ],
       facts: [
-        '「使う」と「つくる」の 2 つの入り口があります。',
+        '入り口は「基本のこと」「フェディバースって何？」「使う」「つくる」。',
         '日本語・英語・韓国語で読めます。',
-        'ページの内容は CC0 で、自由に写して、直して、わけあえます。',
+        'ページの内容は CC0 で、自由に写して、直して、わけあえます。「このページを書き直す」から、直す案も送れます。',
         '姉妹サイトは joinfediverse.kr(サーバー選びのお手伝い)です。'
       ],
       relHeading: 'sukhi とのかんけい',
       rel: [
-        'sukhi-social は、人があつまって「過ごす」場所です。atfedi.de は、フェディバースで使えるものを「さがす」ための地図です。',
+        'sukhi-social は、人があつまって「過ごす」場所です。atfedi.de は、フェディバースへ「歩きはじめる」ための、はじめてのガイドです。',
         'atfedi.de は、sukhi-social のサブプロジェクトです。ソースコードも、sukhi-social の GitHub にあります。',
         'どちらも、「あたたかく、いそがずに」という気持ちを分けあっています。'
       ],
@@ -287,7 +287,7 @@ export const copy: Record<Locale, Copy> = {
       lead: '이 공간을 받쳐 주려고 sukhi-social에서는 여러 가지를 만들고 있어요. 모두 공개되어 있어서 누구나 안을 볼 수 있어요. 어려워 보이면 한 줄 설명만 읽어도 괜찮아요.',
       items: [
         { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'sukhi.social을 움직이는 SNS의 구조(소프트웨어)예요. Mastodon이나 Misskey 앱과도 쉽게 이어지도록 만들고 있어요.' },
-        { name: 'atfedi.de', href: ATFEDI_URL, text: '페디버스 도구를 모아 둔 안내소예요. 자세한 이야기는 ‘atfedi.de 이야기’에서 해요.' },
+        { name: 'atfedi.de', href: ATFEDI_URL, text: '페디버스의 첫걸음 안내서예요. 도구 카탈로그도 있어요. 자세한 이야기는 ‘atfedi.de 이야기’에서 해요.' },
         { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Misskey나 Mastodon 등 SNS에 연결하는 앱을 만들기 쉽게 해 주는 부품을 만들고 있어요.' },
         { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'SNS끼리 주고받을 때 쓰는 ‘서명’ 같은 뒷일을 맡는 부품이에요(Elixir 언어용).' }
       ],
@@ -318,21 +318,21 @@ export const copy: Record<Locale, Copy> = {
     },
     atfedi: {
       title: 'atfedi.de 이야기 — sukhi',
-      description: '페디버스 도구 안내소 atfedi.de와 sukhi의 관계에 대해서.',
+      description: '페디버스 첫걸음 안내서 atfedi.de와 sukhi의 관계에 대해서.',
       heading: 'atfedi.de 이야기',
       what: [
-        'atfedi.de는 페디버스에서 쓸 수 있는 도구를 모아 둔 열린 안내소(카탈로그)예요. 페디버스에 처음 온 분들을 위해 부드럽게 안내해요.',
+        'atfedi.de는 페디버스의 첫걸음 안내서예요. ‘페디버스가 뭐예요?’부터 쓰는 도구, 만드는 사람을 위한 도구까지, 처음 온 분들을 위해 부드럽게 안내해요. 도구 카탈로그도 들어 있어요.',
         '헤매도, 아직 잘 몰라도 괜찮아요. 여기에는 서두르는 사람이 없어요. 그런 마음으로 만들고 있어요.'
       ],
       facts: [
-        '‘사용하기’와 ‘만들기’ 두 개의 입구가 있어요.',
+        '입구는 ‘기본 이야기’, ‘페디버스가 뭐예요?’, ‘사용하기’, ‘만들기’예요.',
         '일본어·영어·한국어로 읽을 수 있어요.',
-        '페이지 내용은 CC0라서 자유롭게 복사하고 고치고 나눌 수 있어요.',
+        '페이지 내용은 CC0라서 자유롭게 복사하고 고치고 나눌 수 있어요. ‘이 페이지 고쳐 쓰기’로 고칠 점을 보낼 수도 있어요.',
         '자매 사이트는 joinfediverse.kr(서버 고르기를 도와줘요)이에요.'
       ],
       relHeading: 'sukhi와의 관계',
       rel: [
-        'sukhi-social은 사람들이 모여 ‘지내는’ 공간이에요. atfedi.de는 페디버스에서 쓸 수 있는 것을 ‘찾는’ 지도예요.',
+        'sukhi-social은 사람들이 모여 ‘지내는’ 공간이에요. atfedi.de는 페디버스로 ‘걸어 들어가는’ 첫걸음 안내서예요.',
         'atfedi.de는 sukhi-social의 서브 프로젝트예요. 소스 코드도 sukhi-social의 GitHub에 있어요.',
         '둘 다 ‘따뜻하게, 서두르지 않고’라는 마음을 나누고 있어요.'
       ],
@@ -406,7 +406,7 @@ export const copy: Record<Locale, Copy> = {
       lead: 'To support this place, sukhi-social makes a few different things. All of it is open, so anyone can look inside. If something sounds technical, the one-line description is all you need.',
       items: [
         { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'The social network software that runs sukhi.social. It is built to connect easily with apps for Mastodon and Misskey.' },
-        { name: 'atfedi.de', href: ATFEDI_URL, text: 'A friendly directory of fediverse tools. More in "About atfedi.de".' },
+        { name: 'atfedi.de', href: ATFEDI_URL, text: 'A first-steps guide to the fediverse, with a catalog of tools too. More in "About atfedi.de".' },
         { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Parts that make it easier to build apps that connect to social networks like Misskey and Mastodon.' },
         { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'A behind-the-scenes part for the Elixir language, handling things like the "signatures" social networks use when they talk to each other.' }
       ],
@@ -437,21 +437,21 @@ export const copy: Record<Locale, Copy> = {
     },
     atfedi: {
       title: 'About atfedi.de — sukhi',
-      description: 'atfedi.de, a friendly directory of fediverse tools, and how it relates to sukhi.',
+      description: 'atfedi.de, a friendly first-steps guide to the fediverse, and how it relates to sukhi.',
       heading: 'About atfedi.de',
       what: [
-        'atfedi.de is an open directory of tools for the fediverse. It is a gentle guide for people who have just arrived.',
+        'atfedi.de is a gentle first-steps guide to the fediverse. It greets newcomers with "Oh, a new friend! So glad you\'re here!" and walks them from "What is the fediverse?" to tools to use and tools to build. It also keeps a catalog of those tools.',
         "It's okay to feel lost, and okay not to know much yet. Nobody here is in a hurry. That is the spirit it is made in."
       ],
       facts: [
-        'It has two doors: "Use" and "Build".',
+        'Its doors are "The basics", "What is the fediverse?", "Use", and "Build".',
         'You can read it in Japanese, English, and Korean.',
-        'The page content is CC0, so you can copy, change, and share it freely.',
+        'The page content is CC0, so you can copy, change, and share it freely. A "Rewrite this page" link lets you suggest changes.',
         'Its sister site is joinfediverse.kr, which helps you choose a server.'
       ],
       relHeading: 'How it relates to sukhi',
       rel: [
-        'sukhi-social is a place where people gather and spend time. atfedi.de is a map for finding what you can use in the fediverse.',
+        'sukhi-social is a place where people gather and spend time. atfedi.de is a first-steps guide for starting to walk in the fediverse.',
         'atfedi.de is a sub-project of sukhi-social. Its source code lives on the sukhi-social GitHub, too.',
         'Both share the same feeling: warm, and not in a hurry.'
       ],
