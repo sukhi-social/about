@@ -89,10 +89,8 @@ main { min-height: 50vh; }
 .bar .right { display: flex; align-items: center; gap: 1rem; }
 .button.small { padding: 0.3rem 1.1rem; font-size: 0.9rem; line-height: 1.7; }
 
-/* 韓国語(Gothic A1)は、字間をつめて(-0.03em)、行間を 1.6 に。 */
-html:lang(ko) body { letter-spacing: -0.03em; line-height: 1.6; }
-/* いちばん小さい本文(カードの説明・フッター)だけ、少しゆるめる。 */
-html:lang(ko) .cards span, html:lang(ko) footer { letter-spacing: -0.025em; }
+/* 韓国語(Gothic A1)は、字間をつめて(-0.02em)、行間を 1.6 に。 */
+html:lang(ko) body { letter-spacing: -0.02em; line-height: 1.6; }
 /* スローガン(玄関の大見出し)だけは、字間を調整しない。 */
 html:lang(ko) .hero h1 { letter-spacing: normal; }
 code { font-size: 0.92em; background: var(--accent-soft); padding: 0.05em 0.4em; border-radius: 0.4em; }
@@ -104,7 +102,7 @@ html:lang(ja) .tabs, html:lang(ja) .cards span, html:lang(ja) .facts, html:lang(
 
 /* 404 は、日本語と韓国語を 1 枚にならべるので、区切りごとに言語の字間を当てる。 */
 .lost section:lang(ja) { letter-spacing: 0.075em; }
-.lost section:lang(ko) { letter-spacing: -0.03em; line-height: 1.6; }
+.lost section:lang(ko) { letter-spacing: -0.02em; line-height: 1.6; }
 .lost section:lang(ko) h1 { letter-spacing: normal; }
 
 /* 右下のひとこと。英語の祈りなので、字間はそのまま。 */

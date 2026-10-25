@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 import './fonts';
 import '../styles/about.css';
-import { copy, LOGIN_URL, ORG_URL, type Locale, type PageKey } from '../content';
+import { copy, LOGIN_URL, ORG_URL, SHOW_LOGIN, type Locale, type PageKey } from '../content';
 
 interface Props {
   locale: Locale;
@@ -35,7 +35,7 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
       <a class="mark" href={base}>{c.siteName}</a>
       <div class="right">
         <a class="lang" href={otherPath} hreflang={locale === 'ja' ? 'ko' : 'ja'}>{c.langSwitch}</a>
-        <a class="button small" href={LOGIN_URL}>{c.login}</a>
+        {SHOW_LOGIN && <a class="button small" href={LOGIN_URL}>{c.login}</a>}
       </div>
     </header>
     <nav class="tabs" aria-label={c.navLabel}>

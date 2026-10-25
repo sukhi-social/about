@@ -7,6 +7,10 @@
 // ここだけを本当の場所に差し替える(いまは仮)。
 export const LOGIN_URL = 'https://sukhi.social/login';
 
+// TODO: インスタンス(sukhi.social)が上がったら true にして、ログインのボタンを出す。
+//       そのとき LOGIN_URL も本当のリンク先か確かめる。
+export const SHOW_LOGIN = false;
+
 export const ORG_URL = 'https://github.com/sukhi-social';
 export const FEDI_REPO_URL = 'https://github.com/sukhi-social/sukhi-fedi';
 export const ATFEDI_URL = 'https://atfedi.de';
