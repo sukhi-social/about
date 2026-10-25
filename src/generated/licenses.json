@@ -1,0 +1,2415 @@
+{
+  "fonts": [
+    {
+      "name": "@fontsource/gothic-a1",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "href": "https://fontsource.org/fonts/gothic-a1",
+      "copyright": [
+        "© HanYang I&C Co.,Ltd"
+      ]
+    },
+    {
+      "name": "@fontsource/nunito",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "href": "https://fontsource.org/fonts/nunito",
+      "copyright": [
+        "© 2014 The Nunito Project Authors"
+      ]
+    },
+    {
+      "name": "@fontsource/zen-maru-gothic",
+      "version": "5.3.1",
+      "license": "OFL-1.1",
+      "href": "https://fontsource.org/fonts/zen-maru-gothic",
+      "copyright": [
+        "© 2021 The Zen Maru Gothic Authors"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "name": "@astrojs/astro2tsx",
+      "version": "0.1.3",
+      "license": "MIT",
+      "href": "https://astro.build",
+      "copyright": [
+        "© 2026 Astro contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/check",
+      "version": "0.9.12",
+      "license": "MIT",
+      "href": "https://github.com/withastro/astro/tree/main/packages/language-tools/astro-check",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/compiler-binding",
+      "version": "0.5.2",
+      "license": "MIT",
+      "href": "https://astro.build",
+      "copyright": [
+        "© 2026 Astro contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/compiler-rs",
+      "version": "0.5.2",
+      "license": "MIT",
+      "href": "https://astro.build",
+      "copyright": [
+        "© 2026 Astro contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/internal-helpers",
+      "version": "0.13.0",
+      "license": "MIT",
+      "href": "https://github.com/withastro/astro#readme",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/language-server",
+      "version": "2.17.3",
+      "license": "MIT",
+      "href": "https://github.com/withastro/astro#readme",
+      "copyright": [
+        "© 2023 The Astro Technology Company",
+        "© 2020-Present these people"
+      ]
+    },
+    {
+      "name": "@astrojs/markdown-satteri",
+      "version": "0.4.5",
+      "license": "MIT",
+      "href": "https://astro.build",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/prism",
+      "version": "4.1.1",
+      "license": "MIT",
+      "href": "https://docs.astro.build/en/guides/syntax-highlighting/#prism-",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/telemetry",
+      "version": "3.4.1",
+      "license": "MIT",
+      "href": "https://astro.build",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "@astrojs/yaml2ts",
+      "version": "0.2.4",
+      "license": "MIT",
+      "href": "https://github.com/withastro/astro#readme",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.11",
+      "license": "MIT",
+      "href": "https://babel.dev/docs/en/next/babel-helper-string-parser",
+      "copyright": [
+        "© 2014-present Sebastian McKenzie and other contributors"
+      ]
+    },
+    {
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "license": "MIT",
+      "href": "https://github.com/babel/babel#readme",
+      "copyright": [
+        "© 2014-present Sebastian McKenzie and other contributors"
+      ]
+    },
+    {
+      "name": "@babel/parser",
+      "version": "7.29.11",
+      "license": "MIT",
+      "href": "https://babel.dev/docs/en/next/babel-parser",
+      "copyright": [
+        "© 2012-2014 by various contributors (see AUTHORS)"
+      ]
+    },
+    {
+      "name": "@babel/types",
+      "version": "7.29.11",
+      "license": "MIT",
+      "href": "https://babel.dev/docs/en/next/babel-types",
+      "copyright": [
+        "© 2014-present Sebastian McKenzie and other contributors"
+      ]
+    },
+    {
+      "name": "@bruits/satteri",
+      "version": "0.10.5",
+      "license": "MIT",
+      "href": "https://github.com/bruits/satteri#readme",
+      "copyright": []
+    },
+    {
+      "name": "@capsizecss/unpack",
+      "version": "4.0.1",
+      "license": "MIT",
+      "href": "https://github.com/seek-oss/capsize#readme",
+      "copyright": [
+        "© 2021 SEEK"
+      ]
+    },
+    {
+      "name": "@clack/core",
+      "version": "1.5.1",
+      "license": "MIT",
+      "href": "https://github.com/bombshell-dev/clack/tree/main/packages/core#readme",
+      "copyright": [
+        "© Nate Moore"
+      ]
+    },
+    {
+      "name": "@clack/prompts",
+      "version": "1.8.1",
+      "license": "MIT",
+      "href": "https://github.com/bombshell-dev/clack/tree/main/packages/prompts#readme",
+      "copyright": [
+        "© Nate Moore"
+      ]
+    },
+    {
+      "name": "@emmetio/abbreviation",
+      "version": "2.3.3",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/emmet#readme",
+      "copyright": [
+        "© 2020 Sergey Chikuyonok"
+      ]
+    },
+    {
+      "name": "@emmetio/css-abbreviation",
+      "version": "2.1.8",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/emmet#readme",
+      "copyright": [
+        "© 2020 Sergey Chikuyonok"
+      ]
+    },
+    {
+      "name": "@emmetio/css-parser",
+      "version": "0.4.1",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/css-parser#readme",
+      "copyright": [
+        "© 2017 Emmet.io"
+      ]
+    },
+    {
+      "name": "@emmetio/html-matcher",
+      "version": "1.3.0",
+      "license": "ISC",
+      "href": "https://github.com/emmetio/html-matcher#readme",
+      "copyright": [
+        "© 2017 Emmet.io"
+      ]
+    },
+    {
+      "name": "@emmetio/scanner",
+      "version": "1.0.4",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/emmet#readme",
+      "copyright": [
+        "© 2020 Sergey Chikuyonok"
+      ]
+    },
+    {
+      "name": "@emmetio/stream-reader",
+      "version": "2.2.0",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/stream-reader#readme",
+      "copyright": [
+        "© 2017 Emmet.io"
+      ]
+    },
+    {
+      "name": "@emmetio/stream-reader-utils",
+      "version": "0.1.0",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/stream-reader-utils#readme",
+      "copyright": [
+        "© 2017 Emmet.io"
+      ]
+    },
+    {
+      "name": "@emnapi/core",
+      "version": "1.11.3",
+      "license": "MIT",
+      "href": "https://github.com/toyobayashi/emnapi#readme",
+      "copyright": [
+        "© 2021-present Toyobayashi"
+      ]
+    },
+    {
+      "name": "@emnapi/runtime",
+      "version": "1.11.3",
+      "license": "MIT",
+      "href": "https://github.com/toyobayashi/emnapi#readme",
+      "copyright": [
+        "© 2021-present Toyobayashi"
+      ]
+    },
+    {
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.3",
+      "license": "MIT",
+      "href": "https://github.com/toyobayashi/emnapi#readme",
+      "copyright": [
+        "© 2021-present Toyobayashi"
+      ]
+    },
+    {
+      "name": "@img/colour",
+      "version": "1.1.0",
+      "license": "MIT",
+      "href": "https://github.com/lovell/colour#readme",
+      "copyright": [
+        "© 2012 Heather Arthur",
+        "© 2016-2021 Josh Junon",
+        "© 2015 Dmitry Ivanov"
+      ]
+    },
+    {
+      "name": "@img/sharp",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "href": "https://sharp.pixelplumbing.com",
+      "copyright": [
+        "© Lovell Fuller"
+      ]
+    },
+    {
+      "name": "@img/sharp-libvips",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "href": "https://sharp.pixelplumbing.com",
+      "copyright": [
+        "© Lovell Fuller"
+      ]
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT",
+      "href": "https://github.com/jridgewell/sourcemaps/tree/main/packages/sourcemap-codec",
+      "copyright": [
+        "© 2024 Justin Ridgewell"
+      ]
+    },
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.2.4",
+      "license": "MIT",
+      "href": "https://napi.rs/",
+      "copyright": [
+        "© LongYinan"
+      ]
+    },
+    {
+      "name": "@oslojs/encoding",
+      "version": "1.1.0",
+      "license": "MIT",
+      "href": "https://github.com/oslo-project/encoding#readme",
+      "copyright": [
+        "© 2024 pilcrowOnPaper"
+      ]
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.155.0",
+      "license": "MIT",
+      "href": "https://oxc.rs",
+      "copyright": [
+        "© 2024-present VoidZero Inc. & Contributors",
+        "© 2023 Boshen"
+      ]
+    },
+    {
+      "name": "@rolldown/binding",
+      "version": "1.2.15",
+      "license": "MIT",
+      "href": "https://rolldown.rs/",
+      "copyright": []
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "license": "MIT",
+      "href": "https://github.com/rolldown/plugins/tree/main/packages/pluginutils#readme",
+      "copyright": [
+        "© 2026-present, rolldown/plugins repository contributors"
+      ]
+    },
+    {
+      "name": "@shikijs/core",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/engine-javascript",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/engine-oniguruma",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/langs",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/primitive",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/themes",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/types",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "@shikijs/vscode-textmate",
+      "version": "10.1.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/vscode-textmate#readme",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "version": "0.10.4",
+      "license": "MIT",
+      "href": "https://github.com/toyobayashi/wasm-util#readme",
+      "copyright": [
+        "© 2022-present Toyobayashi"
+      ]
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "license": "MIT",
+      "href": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@types/estree-jsx",
+      "version": "1.0.5",
+      "license": "MIT",
+      "href": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree-jsx",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@types/hast",
+      "version": "3.0.5",
+      "license": "MIT",
+      "href": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hast",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@types/mdast",
+      "version": "4.0.4",
+      "license": "MIT",
+      "href": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/mdast",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@types/nlcst",
+      "version": "2.0.3",
+      "license": "MIT",
+      "href": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/nlcst",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@types/unist",
+      "version": "3.0.3",
+      "license": "MIT",
+      "href": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/unist",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "@ungap/structured-clone",
+      "version": "1.4.0",
+      "license": "ISC",
+      "href": "https://github.com/ungap/structured-clone#readme",
+      "copyright": [
+        "© 2021, Andrea Giammarchi, @WebReflection"
+      ]
+    },
+    {
+      "name": "@volar/kit",
+      "version": "2.4.30",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/volar.js#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "@volar/language-core",
+      "version": "2.4.30",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/volar.js#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "@volar/language-server",
+      "version": "2.4.30",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/volar.js#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "@volar/language-service",
+      "version": "2.4.30",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/volar.js#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "@volar/source-map",
+      "version": "2.4.30",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/volar.js#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "@volar/typescript",
+      "version": "2.4.30",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/volar.js#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "@vscode/emmet-helper",
+      "version": "2.11.0",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-emmet-helper#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "@vscode/l10n",
+      "version": "0.0.18",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-l10n#readme",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "ajv",
+      "version": "8.20.0",
+      "license": "MIT",
+      "href": "https://ajv.js.org",
+      "copyright": [
+        "© 2015-2021 Evgeny Poberezkin"
+      ]
+    },
+    {
+      "name": "ajv-draft-04",
+      "version": "1.0.0",
+      "license": "MIT",
+      "href": "https://github.com/ajv-validator/ajv-draft-04#readme",
+      "copyright": [
+        "© 2021 Evgeny Poberezkin"
+      ]
+    },
+    {
+      "name": "ajv-i18n",
+      "version": "4.2.0",
+      "license": "MIT",
+      "href": "https://github.com/epoberezkin/ajv-i18n#readme",
+      "copyright": [
+        "© 2015 Evgeny Poberezkin"
+      ]
+    },
+    {
+      "name": "am-i-vibing",
+      "version": "0.5.0",
+      "license": "MIT",
+      "href": "https://github.com/ascorbic/am-i-vibing",
+      "copyright": [
+        "© Matt Kane"
+      ]
+    },
+    {
+      "name": "ansi-regex",
+      "version": "6.4.0",
+      "license": "MIT",
+      "href": "https://github.com/chalk/ansi-regex#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "ansi-styles",
+      "version": "6.2.3",
+      "license": "MIT",
+      "href": "https://github.com/chalk/ansi-styles#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "anymatch",
+      "version": "3.1.3",
+      "license": "ISC",
+      "href": "https://github.com/micromatch/anymatch",
+      "copyright": [
+        "© 2019 Elan Shanker, Paul Miller"
+      ]
+    },
+    {
+      "name": "aria-query",
+      "version": "5.3.2",
+      "license": "Apache-2.0",
+      "href": "https://github.com/A11yance/aria-query#readme",
+      "copyright": [
+        "© 2020 A11yance"
+      ]
+    },
+    {
+      "name": "astro",
+      "version": "7.4.2",
+      "license": "MIT",
+      "href": "https://astro.build",
+      "copyright": [
+        "© 2021 Fred K. Schott",
+        "© 2020 these people",
+        "© 2019-present, Yuxi (Evan) You and Vite contributors"
+      ]
+    },
+    {
+      "name": "axobject-query",
+      "version": "4.1.0",
+      "license": "Apache-2.0",
+      "href": "https://github.com/A11yance/axobject-query#readme",
+      "copyright": [
+        "© 2020 A11yance"
+      ]
+    },
+    {
+      "name": "bail",
+      "version": "2.0.2",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/bail#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "boolbase",
+      "version": "1.0.0",
+      "license": "ISC",
+      "href": "https://github.com/fb55/boolbase",
+      "copyright": [
+        "© Felix Boehm"
+      ]
+    },
+    {
+      "name": "ccount",
+      "version": "2.0.1",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/ccount#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "character-entities-html4",
+      "version": "2.1.0",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/character-entities-html4#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "character-entities-legacy",
+      "version": "3.0.0",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/character-entities-legacy#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "chokidar",
+      "version": "5.0.0",
+      "license": "MIT",
+      "href": "https://github.com/paulmillr/chokidar",
+      "copyright": [
+        "© 2012 Paul Miller, Elan Shanker"
+      ]
+    },
+    {
+      "name": "ci-info",
+      "version": "4.4.0",
+      "license": "MIT",
+      "href": "https://github.com/watson/ci-info",
+      "copyright": [
+        "© 2016 Thomas Watson Steen"
+      ]
+    },
+    {
+      "name": "cliui",
+      "version": "9.0.1",
+      "license": "ISC",
+      "href": "https://github.com/yargs/cliui#readme",
+      "copyright": [
+        "© 2015, Contributors"
+      ]
+    },
+    {
+      "name": "clsx",
+      "version": "2.1.1",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/clsx#readme",
+      "copyright": [
+        "© Luke Edwards (lukeed.com)"
+      ]
+    },
+    {
+      "name": "comma-separated-tokens",
+      "version": "2.0.3",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/comma-separated-tokens#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "commander",
+      "version": "11.1.0",
+      "license": "MIT",
+      "href": "https://github.com/tj/commander.js#readme",
+      "copyright": [
+        "© 2011 TJ Holowaychuk"
+      ]
+    },
+    {
+      "name": "common-ancestor-path",
+      "version": "2.0.0",
+      "license": "BlueOak-1.0.0",
+      "href": "https://github.com/isaacs/common-ancestor-path#readme",
+      "copyright": [
+        "© Isaac Z. Schlueter"
+      ]
+    },
+    {
+      "name": "cookie",
+      "version": "2.0.1",
+      "license": "MIT",
+      "href": "https://github.com/jshttp/cookie#readme",
+      "copyright": [
+        "© 2012-2014 Roman Shtylman",
+        "© 2015 Douglas Christopher Wilson"
+      ]
+    },
+    {
+      "name": "cookie-es",
+      "version": "1.2.3",
+      "license": "MIT",
+      "href": "https://github.com/unjs/cookie-es#readme",
+      "copyright": [
+        "© 2012-2014 Roman Shtylman",
+        "© 2015 Douglas Christopher Wilson",
+        "© 2015 Nathan Friedly"
+      ]
+    },
+    {
+      "name": "crossws",
+      "version": "0.3.5",
+      "license": "MIT",
+      "href": "https://crossws.h3.dev",
+      "copyright": [
+        "© Pooya Parsa",
+        "© 2011 Einar Otto Stangvik",
+        "© 2013 Arnout Kazemier and contributors"
+      ]
+    },
+    {
+      "name": "css-select",
+      "version": "6.0.0",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/css-select#readme",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "css-tree",
+      "version": "2.2.1",
+      "license": "MIT",
+      "href": "https://github.com/csstree/csstree#readme",
+      "copyright": [
+        "© 2016-2022 by Roman Dvornov"
+      ]
+    },
+    {
+      "name": "css-tree",
+      "version": "3.2.1",
+      "license": "MIT",
+      "href": "https://github.com/csstree/csstree#readme",
+      "copyright": [
+        "© 2016-2026 by Roman Dvornov"
+      ]
+    },
+    {
+      "name": "css-what",
+      "version": "7.0.0",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/css-what#readme",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "csso",
+      "version": "5.0.5",
+      "license": "MIT",
+      "href": "https://github.com/css/csso#readme",
+      "copyright": [
+        "© 2015-2021 by Roman Dvornov",
+        "© 2011-2015 by Sergey Kryzhanovsky"
+      ]
+    },
+    {
+      "name": "defu",
+      "version": "6.1.7",
+      "license": "MIT",
+      "href": "https://github.com/unjs/defu#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "dequal",
+      "version": "2.0.3",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/dequal#readme",
+      "copyright": [
+        "© Luke Edwards (lukeed.com)"
+      ]
+    },
+    {
+      "name": "destr",
+      "version": "2.0.5",
+      "license": "MIT",
+      "href": "https://github.com/unjs/destr#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0",
+      "href": "https://github.com/lovell/detect-libc#readme",
+      "copyright": [
+        "© Lovell Fuller"
+      ]
+    },
+    {
+      "name": "devalue",
+      "version": "6.0.3",
+      "license": "MIT",
+      "href": "https://github.com/sveltejs/devalue#readme",
+      "copyright": [
+        "© 2018-19 these people"
+      ]
+    },
+    {
+      "name": "devlop",
+      "version": "1.1.0",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/devlop#readme",
+      "copyright": [
+        "© 2023 Titus Wormer"
+      ]
+    },
+    {
+      "name": "diff",
+      "version": "9.0.0",
+      "license": "BSD-3-Clause",
+      "href": "https://github.com/kpdecker/jsdiff#readme",
+      "copyright": [
+        "© 2009-2015, Kevin Decker"
+      ]
+    },
+    {
+      "name": "dom-serializer",
+      "version": "2.0.0",
+      "license": "MIT",
+      "href": "https://github.com/cheeriojs/dom-serializer#readme",
+      "copyright": [
+        "© 2014 The cheeriojs contributors"
+      ]
+    },
+    {
+      "name": "domelementtype",
+      "version": "2.3.0",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/domelementtype#readme",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "domhandler",
+      "version": "5.0.3",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/domhandler#readme",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "domutils",
+      "version": "3.2.2",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/domutils#readme",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "dset",
+      "version": "3.1.4",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/dset#readme",
+      "copyright": [
+        "© Luke Edwards (lukeed.com)"
+      ]
+    },
+    {
+      "name": "emmet",
+      "version": "2.4.11",
+      "license": "MIT",
+      "href": "https://github.com/emmetio/emmet#readme",
+      "copyright": [
+        "© 2020 Sergey Chikuyonok"
+      ]
+    },
+    {
+      "name": "emoji-regex",
+      "version": "10.6.0",
+      "license": "MIT",
+      "href": "https://mths.be/emoji-regex",
+      "copyright": [
+        "© Mathias Bynens"
+      ]
+    },
+    {
+      "name": "entities",
+      "version": "4.5.0",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/entities#readme",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "es-module-lexer",
+      "version": "3.0.4",
+      "license": "MIT",
+      "href": "https://github.com/guybedford/es-module-lexer#readme",
+      "copyright": [
+        "© 2018-2022 Guy Bedford"
+      ]
+    },
+    {
+      "name": "escalade",
+      "version": "3.2.0",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/escalade#readme",
+      "copyright": [
+        "© Luke Edwards (lukeed.com)"
+      ]
+    },
+    {
+      "name": "eventemitter3",
+      "version": "5.0.4",
+      "license": "MIT",
+      "href": "https://github.com/primus/eventemitter3#readme",
+      "copyright": [
+        "© 2014 Arnout Kazemier"
+      ]
+    },
+    {
+      "name": "extend",
+      "version": "3.0.2",
+      "license": "MIT",
+      "href": "https://github.com/justmoon/node-extend#readme",
+      "copyright": [
+        "© 2014 Stefan Thomas"
+      ]
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "license": "MIT",
+      "href": "https://github.com/epoberezkin/fast-deep-equal#readme",
+      "copyright": [
+        "© 2017 Evgeny Poberezkin"
+      ]
+    },
+    {
+      "name": "fast-string-truncated-width",
+      "version": "3.0.3",
+      "license": "MIT",
+      "href": "https://github.com/fabiospampinato/fast-string-truncated-width#readme",
+      "copyright": [
+        "© 2024-present Fabio Spampinato"
+      ]
+    },
+    {
+      "name": "fast-string-width",
+      "version": "3.0.2",
+      "license": "MIT",
+      "href": "https://github.com/fabiospampinato/fast-string-width#readme",
+      "copyright": [
+        "© 2024-present Fabio Spampinato"
+      ]
+    },
+    {
+      "name": "fast-uri",
+      "version": "3.1.9",
+      "license": "BSD-3-Clause",
+      "href": "https://github.com/fastify/fast-uri",
+      "copyright": [
+        "© 2011-2021, Gary Court until https://github.com/garycourt/uri-js/commit/a1acf730b4bba3f1097c9f52e7d9d3aba8cdcaae",
+        "© 2021-present The Fastify team <https://github.com/fastify/fastify#team>"
+      ]
+    },
+    {
+      "name": "fast-wrap-ansi",
+      "version": "0.2.2",
+      "license": "MIT",
+      "href": "https://github.com/43081j/fast-wrap-ansi#readme",
+      "copyright": [
+        "© 2025 James Garbutt",
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT",
+      "href": "https://github.com/thecodrr/fdir#readme",
+      "copyright": [
+        "© 2023 Abdullah Atta"
+      ]
+    },
+    {
+      "name": "flattie",
+      "version": "1.1.1",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/flattie#readme",
+      "copyright": [
+        "© Luke Edwards (lukeed.com)"
+      ]
+    },
+    {
+      "name": "fnv1a-64",
+      "version": "0.1.2",
+      "license": "MIT",
+      "href": "https://github.com/danielroe/fnv1a-64#readme",
+      "copyright": [
+        "© 2024 Daniel Roe"
+      ]
+    },
+    {
+      "name": "fontace",
+      "version": "0.4.1",
+      "license": "MIT",
+      "href": "https://github.com/delucis/fontace#readme",
+      "copyright": [
+        "© 2025 Chris Swithinbank"
+      ]
+    },
+    {
+      "name": "fontkitten",
+      "version": "1.0.3",
+      "license": "MIT",
+      "href": "https://github.com/delucis/fontkitten#readme",
+      "copyright": [
+        "© 2025 Chris Swithinbank",
+        "© 2014 Devon Govett",
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "get-caller-file",
+      "version": "2.0.5",
+      "license": "ISC",
+      "href": "https://github.com/stefanpenner/get-caller-file#readme",
+      "copyright": [
+        "© 2018 Stefan Penner"
+      ]
+    },
+    {
+      "name": "get-east-asian-width",
+      "version": "1.7.0",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/get-east-asian-width#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "get-tsconfig",
+      "version": "5.0.0-beta.6",
+      "license": "MIT",
+      "href": "https://github.com/privatenumber/get-tsconfig#readme",
+      "copyright": [
+        "© Hiroki Osame"
+      ]
+    },
+    {
+      "name": "github-slugger",
+      "version": "2.0.0",
+      "license": "ISC",
+      "href": "https://github.com/Flet/github-slugger",
+      "copyright": [
+        "© 2015, Dan Flettre"
+      ]
+    },
+    {
+      "name": "h3",
+      "version": "1.15.11",
+      "license": "MIT",
+      "href": "https://github.com/h3js/h3#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "hast-util-to-html",
+      "version": "9.0.5",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/hast-util-to-html#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "hast-util-whitespace",
+      "version": "3.0.0",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/hast-util-whitespace#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "html-escaper",
+      "version": "3.0.3",
+      "license": "MIT",
+      "href": "https://github.com/WebReflection/html-escaper",
+      "copyright": [
+        "© 2017-present by Andrea Giammarchi - @WebReflection"
+      ]
+    },
+    {
+      "name": "html-void-elements",
+      "version": "3.0.0",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/html-void-elements#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "http-cache-semantics",
+      "version": "4.3.0",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/kornelski/http-cache-semantics#readme",
+      "copyright": [
+        "© 2016-2018 Kornel Lesiński"
+      ]
+    },
+    {
+      "name": "iron-webcrypto",
+      "version": "1.2.1",
+      "license": "MIT",
+      "href": "https://github.com/brc-dd/iron-webcrypto#readme",
+      "copyright": [
+        "© 2021 Divyansh Singh"
+      ]
+    },
+    {
+      "name": "is-docker",
+      "version": "4.0.0",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/is-docker#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "is-plain-obj",
+      "version": "4.1.0",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/is-plain-obj#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "1.0.0",
+      "license": "MIT",
+      "href": "https://github.com/epoberezkin/json-schema-traverse#readme",
+      "copyright": [
+        "© 2017 Evgeny Poberezkin"
+      ]
+    },
+    {
+      "name": "jsonc-parser",
+      "version": "2.3.1",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/node-jsonc-parser#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "jsonc-parser",
+      "version": "3.3.1",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/node-jsonc-parser#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "kleur",
+      "version": "4.1.5",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/kleur#readme",
+      "copyright": [
+        "© Luke Edwards (lukeed.com)"
+      ]
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "href": "https://github.com/parcel-bundler/lightningcss#readme",
+      "copyright": []
+    },
+    {
+      "name": "lru-cache",
+      "version": "11.5.3",
+      "license": "BlueOak-1.0.0",
+      "href": "https://github.com/isaacs/node-lru-cache#readme",
+      "copyright": [
+        "© Isaac Z. Schlueter"
+      ]
+    },
+    {
+      "name": "magic-string",
+      "version": "1.4.3",
+      "license": "MIT",
+      "href": "https://github.com/Rich-Harris/magic-string#readme",
+      "copyright": [
+        "© 2018 Rich Harris"
+      ]
+    },
+    {
+      "name": "magicast",
+      "version": "0.5.5",
+      "license": "MIT",
+      "href": "https://github.com/unjs/magicast#readme",
+      "copyright": [
+        "© Pooya Parsa and Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "mdast-util-to-hast",
+      "version": "13.2.1",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/mdast-util-to-hast#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "mdn-data",
+      "version": "2.0.28",
+      "license": "CC0-1.0",
+      "href": "https://developer.mozilla.org",
+      "copyright": [
+        "© Mozilla Developer Network"
+      ]
+    },
+    {
+      "name": "mdn-data",
+      "version": "2.27.1",
+      "license": "CC0-1.0",
+      "href": "https://developer.mozilla.org",
+      "copyright": [
+        "© Mozilla Developer Network"
+      ]
+    },
+    {
+      "name": "micromark-util-character",
+      "version": "2.1.1",
+      "license": "MIT",
+      "href": "https://github.com/micromark/micromark/tree/main#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "micromark-util-encode",
+      "version": "2.0.1",
+      "license": "MIT",
+      "href": "https://github.com/micromark/micromark/tree/main#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "micromark-util-sanitize-uri",
+      "version": "2.0.1",
+      "license": "MIT",
+      "href": "https://github.com/micromark/micromark/tree/main#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "micromark-util-symbol",
+      "version": "2.0.1",
+      "license": "MIT",
+      "href": "https://github.com/micromark/micromark/tree/main#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "micromark-util-types",
+      "version": "2.0.3",
+      "license": "MIT",
+      "href": "https://github.com/micromark/micromark/tree/main#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "mrmime",
+      "version": "2.0.1",
+      "license": "MIT",
+      "href": "https://github.com/lukeed/mrmime#readme",
+      "copyright": [
+        "© Luke Edwards"
+      ]
+    },
+    {
+      "name": "muggle-string",
+      "version": "0.4.1",
+      "license": "MIT",
+      "href": "https://github.com/johnsoncodehk/muggle-string#readme",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "license": "MIT",
+      "href": "https://github.com/ai/nanoid#readme",
+      "copyright": [
+        "© 2017 Andrey Sitnik"
+      ]
+    },
+    {
+      "name": "neotraverse",
+      "version": "1.0.1",
+      "license": "MIT",
+      "href": "https://neotraverse.puruvj.dev",
+      "copyright": [
+        "© Puru Vijay"
+      ]
+    },
+    {
+      "name": "nlcst-to-string",
+      "version": "4.0.0",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/nlcst-to-string#readme",
+      "copyright": [
+        "© 2014 Titus Wormer"
+      ]
+    },
+    {
+      "name": "node-fetch-native",
+      "version": "1.6.7",
+      "license": "MIT",
+      "href": "https://github.com/unjs/node-fetch-native#readme",
+      "copyright": [
+        "© Pooya Parsa",
+        "© 2016 - 2020 Node Fetch Team",
+        "© 2017 Toru Nagashima"
+      ]
+    },
+    {
+      "name": "node-mock-http",
+      "version": "1.0.5",
+      "license": "MIT",
+      "href": "https://github.com/unjs/node-mock-http#readme",
+      "copyright": []
+    },
+    {
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "license": "MIT",
+      "href": "https://github.com/jonschlinkert/normalize-path",
+      "copyright": [
+        "© 2014-2018, Jon Schlinkert"
+      ]
+    },
+    {
+      "name": "nth-check",
+      "version": "2.1.1",
+      "license": "BSD-2-Clause",
+      "href": "https://github.com/fb55/nth-check",
+      "copyright": [
+        "© Felix Böhm"
+      ]
+    },
+    {
+      "name": "obug",
+      "version": "3.0.0",
+      "license": "MIT",
+      "href": "https://github.com/sxzz/obug#readme",
+      "copyright": [
+        "© 2025-PRESENT Kevin Deng",
+        "© 2014-2017 TJ Holowaychuk",
+        "© 2018-2021 Josh Junon"
+      ]
+    },
+    {
+      "name": "ofetch",
+      "version": "1.5.1",
+      "license": "MIT",
+      "href": "https://github.com/unjs/ofetch#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "oniguruma-parser",
+      "version": "0.12.2",
+      "license": "MIT",
+      "href": "https://github.com/slevithan/oniguruma-parser#readme",
+      "copyright": [
+        "© 2025-2026 Steven Levithan"
+      ]
+    },
+    {
+      "name": "oniguruma-to-es",
+      "version": "4.3.6",
+      "license": "MIT",
+      "href": "https://github.com/slevithan/oniguruma-to-es#readme",
+      "copyright": [
+        "© 2024-2026 Steven Levithan"
+      ]
+    },
+    {
+      "name": "p-limit",
+      "version": "7.3.3",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/p-limit#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "p-queue",
+      "version": "9.3.5",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/p-queue#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "p-timeout",
+      "version": "7.0.2",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/p-timeout#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "package-manager-detector",
+      "version": "1.9.0",
+      "license": "MIT",
+      "href": "https://github.com/antfu-collective/package-manager-detector#readme",
+      "copyright": [
+        "© 2020-PRESENT Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "path-browserify",
+      "version": "1.0.1",
+      "license": "MIT",
+      "href": "https://github.com/browserify/path-browserify",
+      "copyright": [
+        "© 2013 James Halliday"
+      ]
+    },
+    {
+      "name": "piccolore",
+      "version": "0.1.3",
+      "license": "ISC",
+      "href": "https://github.com/delucis/piccolore#readme",
+      "copyright": []
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "href": "https://github.com/alexeyraspopov/picocolors#readme",
+      "copyright": [
+        "© 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "2.3.2",
+      "license": "MIT",
+      "href": "https://github.com/micromatch/picomatch",
+      "copyright": [
+        "© 2017-present, Jon Schlinkert"
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT",
+      "href": "https://github.com/micromatch/picomatch",
+      "copyright": [
+        "© 2017-present, Jon Schlinkert"
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.31",
+      "license": "MIT",
+      "href": "https://postcss.org/",
+      "copyright": [
+        "© 2013 Andrey Sitnik"
+      ]
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.10",
+      "license": "MIT",
+      "href": "https://prettier.io",
+      "copyright": [
+        "© James Long and contributors"
+      ]
+    },
+    {
+      "name": "prismjs",
+      "version": "1.30.0",
+      "license": "MIT",
+      "href": "https://github.com/PrismJS/prism#readme",
+      "copyright": [
+        "© 2012 Lea Verou"
+      ]
+    },
+    {
+      "name": "process-ancestry",
+      "version": "0.1.0",
+      "license": "MIT",
+      "href": "https://github.com/ascorbic/process-ancestry",
+      "copyright": [
+        "© Matt Kane"
+      ]
+    },
+    {
+      "name": "property-information",
+      "version": "7.2.0",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/property-information#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "radix3",
+      "version": "1.1.2",
+      "license": "MIT",
+      "href": "https://github.com/unjs/radix3#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "readdirp",
+      "version": "5.1.1",
+      "license": "MIT",
+      "href": "https://github.com/paulmillr/readdirp",
+      "copyright": [
+        "© 2012-2019 Thorsten Lorenz, Paul Miller"
+      ]
+    },
+    {
+      "name": "regex",
+      "version": "6.1.0",
+      "license": "MIT",
+      "href": "https://github.com/slevithan/regex#readme",
+      "copyright": [
+        "© 2025 Steven Levithan"
+      ]
+    },
+    {
+      "name": "regex-recursion",
+      "version": "6.0.2",
+      "license": "MIT",
+      "href": "https://github.com/slevithan/regex-recursion#readme",
+      "copyright": [
+        "© 2025 Steven Levithan"
+      ]
+    },
+    {
+      "name": "regex-utilities",
+      "version": "2.3.0",
+      "license": "MIT",
+      "href": "https://github.com/slevithan/regex-utilities#readme",
+      "copyright": [
+        "© 2024 Steven Levithan"
+      ]
+    },
+    {
+      "name": "request-light",
+      "version": "0.5.8",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/node-request-light#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "request-light",
+      "version": "0.7.0",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/node-request-light#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "license": "MIT",
+      "href": "https://github.com/floatdrop/require-from-string#readme",
+      "copyright": [
+        "© Vsevolod Strukchinsky (github.com/floatdrop)"
+      ]
+    },
+    {
+      "name": "resolve-pkg-maps",
+      "version": "1.0.0",
+      "license": "MIT",
+      "href": "https://github.com/privatenumber/resolve-pkg-maps#readme",
+      "copyright": [
+        "© Hiroki Osame"
+      ]
+    },
+    {
+      "name": "retext-smartypants",
+      "version": "6.2.0",
+      "license": "MIT",
+      "href": "https://github.com/retextjs/retext-smartypants#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.15",
+      "license": "MIT",
+      "href": "https://rolldown.rs/",
+      "copyright": [
+        "© 2024-present VoidZero Inc. & Contributors"
+      ]
+    },
+    {
+      "name": "satteri",
+      "version": "0.10.5",
+      "license": "MIT",
+      "href": "https://github.com/bruits/satteri#readme",
+      "copyright": [
+        "© 2026 Bruits"
+      ]
+    },
+    {
+      "name": "sax",
+      "version": "1.6.1",
+      "license": "BlueOak-1.0.0",
+      "href": "https://github.com/isaacs/sax-js#readme",
+      "copyright": [
+        "© Isaac Z. Schlueter"
+      ]
+    },
+    {
+      "name": "semver",
+      "version": "7.8.5",
+      "license": "ISC",
+      "href": "https://github.com/npm/node-semver#readme",
+      "copyright": [
+        "© Isaac Z. Schlueter and Contributors"
+      ]
+    },
+    {
+      "name": "sharp",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "href": "https://sharp.pixelplumbing.com",
+      "copyright": [
+        "© Lovell Fuller"
+      ]
+    },
+    {
+      "name": "shiki",
+      "version": "4.5.0",
+      "license": "MIT",
+      "href": "https://github.com/shikijs/shiki#readme",
+      "copyright": [
+        "© 2021 Pine Wu",
+        "© 2023 Anthony Fu <https://github.com/antfu>"
+      ]
+    },
+    {
+      "name": "sisteransi",
+      "version": "1.0.5",
+      "license": "MIT",
+      "href": "https://github.com/terkelg/sisteransi#readme",
+      "copyright": [
+        "© 2018 Terkel Gjervig Nielsen"
+      ]
+    },
+    {
+      "name": "smol-toml",
+      "version": "1.9.1",
+      "license": "BSD-3-Clause",
+      "href": "https://github.com/squirrelchat/smol-toml#readme",
+      "copyright": [
+        "© Squirrel Chat et al"
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "license": "BSD-3-Clause",
+      "href": "https://github.com/7rulnik/source-map-js",
+      "copyright": [
+        "© 2009-2011, Mozilla Foundation and contributors"
+      ]
+    },
+    {
+      "name": "space-separated-tokens",
+      "version": "2.0.2",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/space-separated-tokens#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "std-env",
+      "version": "4.3.0",
+      "license": "MIT",
+      "href": "https://github.com/unjs/std-env#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "string-width",
+      "version": "7.2.0",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/string-width#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "string-width",
+      "version": "8.3.0",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/string-width#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "stringify-entities",
+      "version": "4.0.4",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/stringify-entities#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "strip-ansi",
+      "version": "7.2.0",
+      "license": "MIT",
+      "href": "https://github.com/chalk/strip-ansi#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "svgo",
+      "version": "4.1.0",
+      "license": "MIT",
+      "href": "https://svgo.dev",
+      "copyright": [
+        "© Kir Belevich"
+      ]
+    },
+    {
+      "name": "tiny-inflate",
+      "version": "1.0.3",
+      "license": "MIT",
+      "href": "https://github.com/devongovett/tiny-inflate",
+      "copyright": [
+        "© 2015-present Devon Govett"
+      ]
+    },
+    {
+      "name": "tinyclip",
+      "version": "1.0.3",
+      "license": "MIT",
+      "href": "https://github.com/tinylibs/tinyclip#readme",
+      "copyright": [
+        "© 2026 Tinylibs"
+      ]
+    },
+    {
+      "name": "tinyexec",
+      "version": "1.3.1",
+      "license": "MIT",
+      "href": "https://github.com/tinylibs/tinyexec#readme",
+      "copyright": [
+        "© 2024 Tinylibs"
+      ]
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT",
+      "href": "https://superchupu.dev/tinyglobby",
+      "copyright": [
+        "© 2024 Madeline Gurriarán"
+      ]
+    },
+    {
+      "name": "tinyps",
+      "version": "0.5.1",
+      "license": "MIT",
+      "href": "https://github.com/tinylibs/tinyps#readme",
+      "copyright": [
+        "© 2026 Tinylibs"
+      ]
+    },
+    {
+      "name": "trim-lines",
+      "version": "3.0.1",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/trim-lines#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "trough",
+      "version": "2.2.0",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/trough#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "href": "https://www.typescriptlang.org/",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "typesafe-path",
+      "version": "0.2.2",
+      "license": "MIT",
+      "href": "https://github.com/johnsoncodehk/typesafe-path#readme",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "typescript",
+      "version": "6.0.3",
+      "license": "Apache-2.0",
+      "href": "https://www.typescriptlang.org/",
+      "copyright": [
+        "© Microsoft Corp."
+      ]
+    },
+    {
+      "name": "typescript-auto-import-cache",
+      "version": "0.3.6",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/typescript-auto-import-cache#readme",
+      "copyright": [
+        "© 2021-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "ufo",
+      "version": "1.6.4",
+      "license": "MIT",
+      "href": "https://github.com/unjs/ufo#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "ultrahtml",
+      "version": "1.7.0",
+      "license": "MIT",
+      "href": "https://github.com/natemoo-re/ultrahtml#README",
+      "copyright": [
+        "© 2013 Jason Miller"
+      ]
+    },
+    {
+      "name": "uncrypto",
+      "version": "0.1.3",
+      "license": "MIT",
+      "href": "https://github.com/unjs/uncrypto#readme",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "undici",
+      "version": "8.12.3",
+      "license": "MIT",
+      "href": "https://undici.nodejs.org",
+      "copyright": [
+        "© Matteo Collina and Undici contributors"
+      ]
+    },
+    {
+      "name": "unified",
+      "version": "11.0.5",
+      "license": "MIT",
+      "href": "https://unifiedjs.com",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "unifont",
+      "version": "1.0.3",
+      "license": "MIT",
+      "href": "https://github.com/unjs/unifont#readme",
+      "copyright": [
+        "© 2024 Daniel Roe"
+      ]
+    },
+    {
+      "name": "unist-util-is",
+      "version": "6.0.1",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/unist-util-is#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "unist-util-position",
+      "version": "5.0.0",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/unist-util-position#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "unist-util-stringify-position",
+      "version": "4.0.0",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/unist-util-stringify-position#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "unist-util-visit",
+      "version": "5.1.0",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/unist-util-visit#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "unist-util-visit-parents",
+      "version": "6.0.2",
+      "license": "MIT",
+      "href": "https://github.com/syntax-tree/unist-util-visit-parents#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    },
+    {
+      "name": "unstorage",
+      "version": "1.17.6",
+      "license": "MIT",
+      "href": "https://unstorage.unjs.io",
+      "copyright": [
+        "© Pooya Parsa"
+      ]
+    },
+    {
+      "name": "verkit",
+      "version": "0.5.0",
+      "license": "MIT",
+      "href": "https://github.com/sxzz/verkit#readme",
+      "copyright": [
+        "© 2026-PRESENT Kevin Deng"
+      ]
+    },
+    {
+      "name": "vfile",
+      "version": "6.0.3",
+      "license": "MIT",
+      "href": "https://github.com/vfile/vfile#readme",
+      "copyright": [
+        "© 2015 Titus Wormer"
+      ]
+    },
+    {
+      "name": "vfile-message",
+      "version": "4.0.3",
+      "license": "MIT",
+      "href": "https://github.com/vfile/vfile-message#readme",
+      "copyright": [
+        "© Titus Wormer"
+      ]
+    },
+    {
+      "name": "vite",
+      "version": "8.3.5",
+      "license": "MIT",
+      "href": "https://vite.dev",
+      "copyright": [
+        "© 2019-present, VoidZero Inc. and Vite contributors",
+        "© 2024 Justin Ridgewell",
+        "© 2019 Justin Ridgewell"
+      ]
+    },
+    {
+      "name": "vitefu",
+      "version": "1.1.3",
+      "license": "MIT",
+      "href": "https://github.com/svitejs/vitefu#readme",
+      "copyright": [
+        "© 2026 Bjorn and Dominik"
+      ]
+    },
+    {
+      "name": "volar-service-css",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/css",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "volar-service-emmet",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/emmet",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "volar-service-html",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/html",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "volar-service-prettier",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/prettier",
+      "copyright": [
+        "© 2022-present Pacharapol Withayasakpunt"
+      ]
+    },
+    {
+      "name": "volar-service-typescript",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/typescript",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "volar-service-typescript-twoslash-queries",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/typescript-twoslash-queries",
+      "copyright": [
+        "© 2022-present Johnson Chu"
+      ]
+    },
+    {
+      "name": "volar-service-yaml",
+      "version": "0.0.71",
+      "license": "MIT",
+      "href": "https://github.com/volarjs/services/tree/master/packages/yaml",
+      "copyright": [
+        "© 2023-present Remco Haszing"
+      ]
+    },
+    {
+      "name": "vscode-css-languageservice",
+      "version": "6.3.10",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-css-languageservice#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "vscode-html-languageservice",
+      "version": "5.6.2",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-html-languageservice#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "vscode-json-languageservice",
+      "version": "4.1.8",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-json-languageservice#readme",
+      "copyright": [
+        "© Microsoft",
+        "© 2013, Nick Fitzgerald"
+      ]
+    },
+    {
+      "name": "vscode-jsonrpc",
+      "version": "10.0.0",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-jsonrpc",
+      "version": "8.2.0",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-languageserver",
+      "version": "9.0.1",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-languageserver-node#readme",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-protocol",
+      "version": "3.17.5",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/protocol",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-protocol",
+      "version": "3.18.5",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/protocol",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-textdocument",
+      "version": "1.0.16",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/textDocument",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-types",
+      "version": "3.17.5",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/types",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-types",
+      "version": "3.18.5",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-languageserver-node/tree/main/types",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-nls",
+      "version": "5.2.0",
+      "license": "MIT",
+      "href": "https://github.com/Microsoft/vscode-nls#readme",
+      "copyright": [
+        "© Microsoft Corporation"
+      ]
+    },
+    {
+      "name": "vscode-uri",
+      "version": "3.2.0",
+      "license": "MIT",
+      "href": "https://github.com/microsoft/vscode-uri#readme",
+      "copyright": [
+        "© Microsoft"
+      ]
+    },
+    {
+      "name": "wrap-ansi",
+      "version": "9.0.2",
+      "license": "MIT",
+      "href": "https://github.com/chalk/wrap-ansi#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "xxhash-wasm",
+      "version": "1.1.0",
+      "license": "MIT",
+      "href": "https://github.com/jungomi/xxhash-wasm#readme",
+      "copyright": [
+        "© 2017 Michael Jungo"
+      ]
+    },
+    {
+      "name": "y18n",
+      "version": "5.0.8",
+      "license": "ISC",
+      "href": "https://github.com/yargs/y18n",
+      "copyright": [
+        "© 2015, Contributors"
+      ]
+    },
+    {
+      "name": "yaml",
+      "version": "2.8.3",
+      "license": "ISC",
+      "href": "https://eemeli.org/yaml/",
+      "copyright": [
+        "© Eemeli Aro"
+      ]
+    },
+    {
+      "name": "yaml",
+      "version": "2.9.1",
+      "license": "ISC",
+      "href": "https://eemeli.org/yaml/",
+      "copyright": [
+        "© Eemeli Aro"
+      ]
+    },
+    {
+      "name": "yaml-language-server",
+      "version": "1.23.0",
+      "license": "MIT",
+      "href": "https://github.com/redhat-developer/yaml-language-server#readme",
+      "copyright": [
+        "© 2017 Red Hat Inc. and others"
+      ]
+    },
+    {
+      "name": "yargs",
+      "version": "18.2.0",
+      "license": "MIT",
+      "href": "https://yargs.js.org/",
+      "copyright": [
+        "© 2010 James Halliday; Modified work Copyright 2014 Contributors"
+      ]
+    },
+    {
+      "name": "yargs-parser",
+      "version": "22.0.0",
+      "license": "ISC",
+      "href": "https://github.com/yargs/yargs-parser#readme",
+      "copyright": [
+        "© 2016, Contributors"
+      ]
+    },
+    {
+      "name": "yocto-queue",
+      "version": "1.2.2",
+      "license": "MIT",
+      "href": "https://github.com/sindresorhus/yocto-queue#readme",
+      "copyright": [
+        "© Sindre Sorhus"
+      ]
+    },
+    {
+      "name": "zod",
+      "version": "4.6.7",
+      "license": "MIT",
+      "href": "https://zod.dev",
+      "copyright": [
+        "© 2025 Colin McDonnell"
+      ]
+    },
+    {
+      "name": "zwitch",
+      "version": "2.0.4",
+      "license": "MIT",
+      "href": "https://github.com/wooorm/zwitch#readme",
+      "copyright": [
+        "© 2016 Titus Wormer"
+      ]
+    }
+  ]
+}

@@ -14,6 +14,7 @@ export const SHOW_LOGIN = false;
 export const ORG_URL = 'https://github.com/sukhi-social';
 export const FEDI_REPO_URL = 'https://github.com/sukhi-social/sukhi-fedi';
 export const ATFEDI_URL = 'https://atfedi.de';
+export const ABOUT_REPO_URL = 'https://github.com/sukhi-social/about';
 
 // 支援の受け口。sukhi-fedi の elixir/priv/legal/support.*.md と同じもの。
 const LIBERAPAY_URL = 'https://liberapay.com/sukhi-social/donate';
@@ -39,7 +40,7 @@ export const LOCALES: { code: Locale; name: string }[] = [
   { code: 'en', name: 'English' },
   { code: 'ko', name: '한국어' }
 ];
-export type PageKey = 'gate' | 'place' | 'projects' | 'atfedi' | 'support';
+export type PageKey = 'gate' | 'place' | 'projects' | 'atfedi' | 'support' | 'licenses';
 
 interface Project {
   name: string;
@@ -96,6 +97,21 @@ interface Copy {
     reachText: string;
     reach: { label: string; value: string; href?: string }[];
   };
+  licenses: {
+    title: string;
+    description: string;
+    heading: string;
+    intro: string;
+    selfHeading: string;
+    self: string;
+    selfLink: string;
+    shipHeading: string;
+    ship: string[];
+    oflText: string;
+    buildHeading: string;
+    build: string;
+    thanks: string[];
+  };
   atfedi: {
     title: string;
     description: string;
@@ -115,7 +131,7 @@ export const copy: Record<Locale, Copy> = {
     login: 'ログイン',
     langLabel: '言語',
     navLabel: 'ページ',
-    nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと', support: '支援' },
+    nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと', support: '支援', licenses: 'ライセンス' },
     footer: 'sukhi は、sukhi-social がつくっています。',
     notFound: {
       title: 'あれれ、ここには何もないみたいです',
@@ -205,6 +221,27 @@ export const copy: Record<Locale, Copy> = {
         { label: 'ActivityPub', value: CONTACT_AP }
       ]
     },
+    licenses: {
+      title: 'ライセンス — sukhi',
+      description: 'このサイト(about)が使っているソフトウェアと、そのライセンスです。',
+      heading: 'ライセンス',
+      intro: 'ここには、このサイト(about)が使っているソフトウェアを載せています。使わせてもらっているものへの、感謝のページです。',
+      selfHeading: 'このサイトのこと',
+      self: 'このサイトのソースコードは、AGPL-3.0-or-later のもとで、GitHub に公開しています。',
+      selfLink: 'GitHub で見る',
+      shipHeading: 'ページといっしょにとどけているもの',
+      ship: [
+        '開いているこのページに届くのは、3 つのフォントと、小さな自作のスクリプトだけです。',
+        'フォントは、このサイトから直接とどけています。Google Fonts のような外のサービスには、つながりません。'
+      ],
+      oflText: 'ライセンス全文(SIL Open Font License 1.1)',
+      buildHeading: 'つくるときに使っているもの',
+      build: 'ページをつくるときにだけ使うものです。できあがったページには、入っていません。',
+      thanks: [
+        'この感謝は、譲渡できません。',
+        'このソフトウェアは、関わってくださったみなさんの、続いていく貢献があって成り立っています。ここに、小さくて、取り消せなくて、無保証で、あるがままの「ありがとう」を贈ります。'
+      ]
+    },
     atfedi: {
       title: 'atfedi.de とのこと — sukhi',
       description: 'フェディバースの、はじめてのガイド atfedi.de と、sukhi のかんけいについて。',
@@ -234,7 +271,7 @@ export const copy: Record<Locale, Copy> = {
     login: '로그인',
     langLabel: '언어',
     navLabel: '페이지',
-    nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기', support: '후원' },
+    nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기', support: '후원', licenses: '라이선스' },
     footer: 'sukhi는 sukhi-social이 만들고 있어요.',
     notFound: {
       title: '어라, 여기엔 아무것도 없는 것 같아요',
@@ -324,6 +361,27 @@ export const copy: Record<Locale, Copy> = {
         { label: 'ActivityPub', value: CONTACT_AP }
       ]
     },
+    licenses: {
+      title: '라이선스 — sukhi',
+      description: '이 사이트(about)가 쓰는 소프트웨어와 그 라이선스예요.',
+      heading: '라이선스',
+      intro: '여기에는 이 사이트(about)가 쓰고 있는 소프트웨어를 적어 두었어요. 빌려 쓰고 있는 것들에 대한 감사의 페이지예요.',
+      selfHeading: '이 사이트 이야기',
+      self: '이 사이트의 소스 코드는 AGPL-3.0-or-later로 GitHub에 공개되어 있어요.',
+      selfLink: 'GitHub에서 보기',
+      shipHeading: '페이지와 함께 보내는 것',
+      ship: [
+        '이 페이지를 열면 전해지는 것은 글꼴 3개와, 직접 만든 작은 스크립트뿐이에요.',
+        '글꼴은 이 사이트에서 바로 보내요. Google Fonts 같은 바깥 서비스에는 연결하지 않아요.'
+      ],
+      oflText: '라이선스 전문(SIL Open Font License 1.1)',
+      buildHeading: '만들 때 쓰는 것',
+      build: '페이지를 만들 때에만 쓰는 것들이에요. 완성된 페이지에는 들어 있지 않아요.',
+      thanks: [
+        '이 감사는 양도할 수 없습니다.',
+        '이 소프트웨어는 여러분의 계속된 기여 덕에 존재합니다. 작고, 취소할 수 없는, 어떠한 보증 없는 “있는 그대로”의 감사를 이곳에서 전합니다.'
+      ]
+    },
     atfedi: {
       title: 'atfedi.de 이야기 — sukhi',
       description: '페디버스 첫걸음 안내서 atfedi.de와 sukhi의 관계에 대해서.',
@@ -353,7 +411,7 @@ export const copy: Record<Locale, Copy> = {
     login: 'Log in',
     langLabel: 'Language',
     navLabel: 'Pages',
-    nav: { gate: 'Home', place: 'About sukhi-social', projects: 'Projects', atfedi: 'About atfedi.de', support: 'Support' },
+    nav: { gate: 'Home', place: 'About sukhi-social', projects: 'Projects', atfedi: 'About atfedi.de', support: 'Support', licenses: 'Licenses' },
     footer: 'sukhi is made by sukhi-social.',
     notFound: {
       title: "Oh, there's nothing here",
@@ -441,6 +499,27 @@ export const copy: Record<Locale, Copy> = {
       reach: [
         { label: 'Email', value: CONTACT_MAIL, href: `mailto:${CONTACT_MAIL}` },
         { label: 'ActivityPub', value: CONTACT_AP }
+      ]
+    },
+    licenses: {
+      title: 'Licenses — sukhi',
+      description: 'The software this site (about) uses, and its licenses.',
+      heading: 'Licenses',
+      intro: 'Here is the software this site (about) uses. It is a page of thanks to the people whose work we borrow.',
+      selfHeading: 'About this site',
+      self: 'The source code of this site is open on GitHub, under AGPL-3.0-or-later.',
+      selfLink: 'See it on GitHub',
+      shipHeading: 'What reaches your browser',
+      ship: [
+        'What is sent to you when you open this page is just three fonts and a few small scripts of our own.',
+        'The fonts are served straight from this site. Nothing connects to outside services such as Google Fonts.'
+      ],
+      oflText: 'Full license text (SIL Open Font License 1.1)',
+      buildHeading: 'What we use to build it',
+      build: 'These are used only while the pages are being made. They are not part of the finished pages.',
+      thanks: [
+        'This thanks is non-transferable.',
+        'This software exists thanks to the continuous contributions of everyone involved. I hereby give a small, irrevocable, warranty-free, AS-IS “Thank you!”'
       ]
     },
     atfedi: {

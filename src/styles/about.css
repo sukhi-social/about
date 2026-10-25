@@ -153,3 +153,14 @@ footer .blessing { text-align: right; letter-spacing: normal; font-weight: 700; 
   background: transparent; color: var(--muted); cursor: pointer;
 }
 .lang-suggest .close:hover { background: var(--surface); }
+
+/* ── ライセンスの一覧 ── */
+ul.names { list-style: none; padding: 0; margin: 1rem 0; }
+ul.names li { padding: 0.55rem 0; border-bottom: 1px solid var(--border); line-height: 1.6; font-size: 0.95rem; letter-spacing: normal; overflow-wrap: anywhere; }
+ul.names .v, ul.names .c { color: var(--muted); font-size: 0.85rem; margin-inline-start: 0.4rem; }
+ul.names .l { margin-inline-start: 0.4rem; font-size: 0.85rem; }
+details.deps { margin: 1rem 0; }
+details.deps summary { cursor: pointer; font-weight: 700; color: var(--accent); padding: 0.4rem 0; }
+details.deps .n { background: var(--accent-soft); border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 0.85rem; margin-inline-start: 0.4rem; }
+.thanks { margin-top: 3rem; color: var(--muted); }
+ul.names .l.first { margin-inline-start: 0; }

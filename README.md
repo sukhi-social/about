@@ -21,3 +21,13 @@ pnpm check    # astro check
 - Astro にした理由: 静的な紹介ページで動く部品がなく、必要なら Svelte の島をあとから足せるためです。
 
 ライセンスは AGPL-3.0-or-later です。
+
+## ライセンスのページ
+
+`/licenses/`(`/en/licenses/`・`/ko/licenses/`)は、このサイトが使っているソフトウェアの一覧です。一覧は `src/generated/licenses.json` から出していて、依存を足した・上げたときは、`pnpm install` のあとに作り直します。
+
+```sh
+node scripts/gen-licenses.mjs
+```
+
+フォントのライセンス全文(OFL)も、同じスクリプトが `public/licenses/fonts/` に写します。
