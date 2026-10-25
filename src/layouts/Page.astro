@@ -28,6 +28,7 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.png" />
     {LOCALES.map((l) => <link rel="alternate" hreflang={l.code} href={pathFor(l.code, page)} />)}
   </head>
