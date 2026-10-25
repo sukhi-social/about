@@ -20,7 +20,7 @@ pnpm check    # astro check
 - ログインのボタンは、いまは非表示です(`src/content.ts` の `SHOW_LOGIN`)。**TODO**: インスタンス(sukhi.social)が上がったら `SHOW_LOGIN = true` にして、`LOGIN_URL`(いまは仮)も本当のリンク先に直す。
 - Astro にした理由: 静的な紹介ページで動く部品がなく、必要なら Svelte の島をあとから足せるためです。
 
-ライセンスは AGPL-3.0-or-later です。
+ライセンス: ソースコードは AGPL-3.0-or-later、ページの内容(文章など)は CC BY 4.0 です。使うときは、出どころ(sukhi-social / about.sukhi.social)を書いて、直したときは、直したと書いてください。
 
 ## ライセンスのページ
 

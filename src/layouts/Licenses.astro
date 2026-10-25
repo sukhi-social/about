@@ -1,54 +1,104 @@
 ---
 // SPDX-License-Identifier: AGPL-3.0-or-later
+// ライセンスの、小さな展示室。法律文書ではなく、はじめての人にも読める「展示パネル」。
 import Page from './Page.astro';
-import { ABOUT_REPO_URL, copy, type Locale } from '../content';
+import { ABOUT_REPO_URL, type Locale } from '../content';
+import { CONTENT_LICENSE_URL, SOURCE_LICENSE, licensesCopy } from '../licenses-copy';
 import deps from '../generated/licenses.json';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const c = copy[locale].licenses;
+const c = licensesCopy[locale];
 
 // SPDX の識別子ひとつだけのときはリンクにする。「(MIT OR CC0-1.0)」のような式は、そのまま文字で。
 const simple = (id: string) => /^[A-Za-z0-9.+-]+$/.test(id);
 const spdx = (id: string) => `https://spdx.org/licenses/${id}.html`;
 const fontFile = (name: string) => `/licenses/fonts/${name.split('/')[1]}-OFL.txt`;
+
+// 展示の「読みかた」パネル: このサイトに出てくるライセンスを、数の多い順に。
+const counts = new Map<string, number>();
+for (const d of deps.build) counts.set(d.license, (counts.get(d.license) ?? 0) + 1);
+counts.set('OFL-1.1', deps.fonts.length);
+counts.set(SOURCE_LICENSE, 1);
+counts.set('CC-BY-4.0', 1);
+const panels = [...counts.entries()]
+  .filter(([id]) => c.notes[id])
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const n = (tpl: string, v: number) => tpl.replace('{n}', String(v));
 ---
 
 <Page locale={locale} page="licenses" title={c.title} description={c.description}>
   <h1 class="plain">{c.heading}</h1>
   <p>{c.intro}</p>
 
-  <h2>{c.selfHeading}</h2>
-  <p>{c.self}</p>
-  <p><a class="more" href={ABOUT_REPO_URL}>{c.selfLink} →</a></p>
+  <section class="exhibit">
+    <h2>{c.whatHeading}</h2>
+    {c.what.map((t) => <p>{t}</p>)}
+  </section>
 
-  <h2>{c.shipHeading}</h2>
-  {c.ship.map((t) => <p>{t}</p>)}
-  <ul class="names deps">
-    {deps.fonts.map((d) => (
-      <li>
-        <a href={d.href}>{d.name}</a> <span class="v">{d.version}</span>
-        <a class="l" href={spdx(d.license)}>{d.license}</a>
-        <span class="c">{d.copyright.join(' / ')}</span><br />
-        <a class="l first" href={fontFile(d.name)}>{c.oflText}</a>
-      </li>
-    ))}
-  </ul>
+  <section class="exhibit">
+    <h2>{c.contentHeading}</h2>
+    {c.content.map((t) => <p>{t}</p>)}
+    <p>{c.contentHow}</p>
+    <p><a class="more" href={CONTENT_LICENSE_URL[locale]} rel="license">{c.contentLink} →</a></p>
+  </section>
 
-  <h2>{c.buildHeading}</h2>
-  <p>{c.build}</p>
-  <details class="deps">
-    <summary>{c.buildHeading} <span class="n">{deps.build.length}</span></summary>
-    <ul class="names">
-      {deps.build.map((d) => (
+  <section class="exhibit">
+    <h2>{c.codeHeading}</h2>
+    <p>{c.code}</p>
+    <p><a class="more" href={ABOUT_REPO_URL}>{c.codeLink} →</a></p>
+  </section>
+
+  <section class="exhibit">
+    <h2>{c.fontsHeading}</h2>
+    {c.fonts.map((t) => <p>{t}</p>)}
+    <ul class="fontcards">
+      {deps.fonts.map((d) => {
+        const cap = c.fontCaptions[d.name];
+        return (
+          <li>
+            <p class={`sample ${cap?.sampleLang ?? ''}`} lang={cap?.sampleLang}>{cap?.sample}</p>
+            <p class="cap">{cap?.note}</p>
+            <p class="meta">
+              <a href={d.href}>{d.name}</a> <span class="v">{d.version}</span>
+              <a class="l" href={spdx(d.license)}>{d.license}</a>
+              <span class="c">{d.copyright.join(' / ')}</span><br />
+              <a class="l first" href={fontFile(d.name)}>{c.oflText}</a>
+            </p>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+
+  <section class="exhibit">
+    <h2>{c.toolsHeading}</h2>
+    {c.tools.map((t) => <p>{n(t, deps.build.length)}</p>)}
+
+    <h3>{c.readHeading}</h3>
+    <p>{c.readLead}</p>
+    <ul class="panels">
+      {panels.map(([id, count]) => (
         <li>
-          <a href={d.href}>{d.name}</a> <span class="v">{d.version}</span>
-          {simple(d.license) ? <a class="l" href={spdx(d.license)}>{d.license}</a> : <span class="l">{d.license}</span>}
-          {d.copyright.length > 0 && <span class="c">{d.copyright.join(' / ')}</span>}
+          <p class="id"><strong>{simple(id) ? <a href={spdx(id)}>{id}</a> : id}</strong> <span class="count">{n(c.countLabel, count)}</span></p>
+          <p>{c.notes[id]}</p>
         </li>
       ))}
     </ul>
-  </details>
+
+    <details class="deps">
+      <summary>{c.allTools} <span class="n">{deps.build.length}</span></summary>
+      <ul class="names">
+        {deps.build.map((d) => (
+          <li>
+            <a href={d.href}>{d.name}</a> <span class="v">{d.version}</span>
+            {simple(d.license) ? <a class="l" href={spdx(d.license)}>{d.license}</a> : <span class="l">{d.license}</span>}
+            {d.copyright.length > 0 && <span class="c">{d.copyright.join(' / ')}</span>}
+          </li>
+        ))}
+      </ul>
+    </details>
+  </section>
 
   <p class="thanks">
     {c.thanks.map((t) => <span>{t}<br /></span>)}

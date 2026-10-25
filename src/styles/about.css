@@ -164,3 +164,23 @@ details.deps summary { cursor: pointer; font-weight: 700; color: var(--accent); 
 details.deps .n { background: var(--accent-soft); border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 0.85rem; margin-inline-start: 0.4rem; }
 .thanks { margin-top: 3rem; color: var(--muted); }
 ul.names .l.first { margin-inline-start: 0; }
+
+/* ── 展示室(ライセンスのページ) ── */
+.exhibit { margin-block: 2.5rem; }
+.exhibit h3 { font-size: 1.1rem; margin: 2rem 0 0.5rem; }
+.fontcards, .panels { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: 0.75rem; }
+.fontcards li, .panels li {
+  padding: 0.9rem 1.1rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface);
+}
+.fontcards p, .panels p { margin: 0.15rem 0; letter-spacing: normal; }
+.fontcards .sample { font-size: 1.5rem; line-height: 1.5; margin: 0; color: var(--text); letter-spacing: normal; }
+.fontcards .sample.en { font-family: 'Nunito', sans-serif; font-weight: 700; }
+.fontcards .sample.ja { font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; }
+.fontcards .sample.ko { font-family: 'Gothic A1', sans-serif; font-weight: 700; }
+.fontcards .cap { color: var(--muted); font-size: 0.95rem; }
+.fontcards .meta { font-size: 0.85rem; color: var(--muted); }
+.panels .id { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6rem; }
+.panels .count { background: var(--accent-soft); border-radius: 999px; padding: 0.05rem 0.7rem; font-size: 0.85rem; color: var(--muted); }
+.panels li p:last-child { color: var(--muted); font-size: 0.95rem; }
+.fontcards .meta .v, .fontcards .meta .c, .fontcards .meta .l { margin-inline-start: 0.4rem; }
+.fontcards .meta .l.first { margin-inline-start: 0; }

@@ -4,6 +4,7 @@ import './fonts';
 import '../styles/about.css';
 import LangPicker from './LangPicker.astro';
 import LangSuggest from './LangSuggest.astro';
+import { CONTENT_LICENSE_URL, licensesCopy } from '../licenses-copy';
 import { BASES, LOCALES, copy, LOGIN_URL, ORG_URL, SHOW_LOGIN, type Locale, type PageKey } from '../content';
 
 interface Props {
@@ -49,6 +50,7 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
       <div>
         <p>{c.footer}</p>
         <p><a href={ORG_URL}>github.com/sukhi-social</a> · <a href={path('licenses')}>{c.nav.licenses}</a></p>
+        <p><a href={CONTENT_LICENSE_URL[locale]} rel="license">{licensesCopy[locale].footerContent}</a></p>
       </div>
       <p class="blessing" lang="en">Sukhī bhava!<br />Be Happy!</p>
     </footer>
