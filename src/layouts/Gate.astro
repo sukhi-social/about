@@ -1,11 +1,11 @@
 ---
 // SPDX-License-Identifier: AGPL-3.0-or-later
 import Page from './Page.astro';
-import { copy, type Locale } from '../content';
+import { BASES, copy, type Locale } from '../content';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const c = copy[locale];
-const base = locale === 'ja' ? '/' : '/ko/';
+const base = BASES[locale];
 ---
 
 <Page locale={locale} page="gate" title={c.gate.title} description={c.gate.description}>

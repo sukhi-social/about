@@ -2,7 +2,8 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 import './fonts';
 import '../styles/about.css';
-import { copy, LOGIN_URL, ORG_URL, SHOW_LOGIN, type Locale, type PageKey } from '../content';
+import LangPicker from './LangPicker.astro';
+import { BASES, LOCALES, copy, LOGIN_URL, ORG_URL, SHOW_LOGIN, type Locale, type PageKey } from '../content';
 
 interface Props {
   locale: Locale;
@@ -12,10 +13,9 @@ interface Props {
 }
 const { locale, page, title, description } = Astro.props;
 const c = copy[locale];
-const base = locale === 'ja' ? '/' : '/ko/';
-const path = (k: PageKey) => (k === 'gate' ? base : `${base}${k}/`);
-const otherBase = locale === 'ja' ? '/ko/' : '/';
-const otherPath = page === 'gate' ? otherBase : `${otherBase}${page}/`;
+const base = BASES[locale];
+const pathFor = (l: Locale, k: PageKey) => (k === 'gate' ? BASES[l] : `${BASES[l]}${k}/`);
+const path = (k: PageKey) => pathFor(locale, k);
 const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
 ---
 
@@ -27,14 +27,13 @@ const keys: PageKey[] = ['gate', 'place', 'projects', 'atfedi', 'support'];
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.png" />
-    <link rel="alternate" hreflang={locale} href={path(page)} />
-    <link rel="alternate" hreflang={locale === 'ja' ? 'ko' : 'ja'} href={otherPath} />
+    {LOCALES.map((l) => <link rel="alternate" hreflang={l.code} href={pathFor(l.code, page)} />)}
   </head>
   <body>
     <header class="bar">
       <a class="mark" href={base}>{c.siteName}</a>
       <div class="right">
-        <a class="lang" href={otherPath} hreflang={locale === 'ja' ? 'ko' : 'ja'}>{c.langSwitch}</a>
+        <LangPicker locale={locale} page={page} />
         {SHOW_LOGIN && <a class="button small" href={LOGIN_URL}>{c.login}</a>}
       </div>
     </header>

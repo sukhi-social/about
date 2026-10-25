@@ -22,7 +22,15 @@ const FAIRY_URL = 'https://fairy.hada.io/@sukhi-social';
 const CONTACT_MAIL = 'hinata@natadeco.com';
 const CONTACT_AP = '@kuro_admin@sukhi.f3liz.casa';
 
-export type Locale = 'ja' | 'ko';
+export type Locale = 'ja' | 'ko' | 'en';
+
+// 各言語の置き場所(日本語が正本で、ルート)と、その言語自身の文字での名前。
+export const BASES: Record<Locale, string> = { ja: '/', ko: '/ko/', en: '/en/' };
+export const LOCALES: { code: Locale; name: string }[] = [
+  { code: 'ja', name: '日本語' },
+  { code: 'en', name: 'English' },
+  { code: 'ko', name: '한국어' }
+];
 export type PageKey = 'gate' | 'place' | 'projects' | 'atfedi' | 'support';
 
 interface Project {
@@ -49,11 +57,10 @@ interface Block {
 }
 
 interface Copy {
-  lang: string;
   siteName: string;
   slogan: string;
   login: string;
-  langSwitch: string;
+  langLabel: string;
   navLabel: string;
   nav: Record<PageKey, string>;
   footer: string;
@@ -95,11 +102,10 @@ interface Copy {
 
 export const copy: Record<Locale, Copy> = {
   ja: {
-    lang: '日本語',
     siteName: 'sukhi',
     slogan: 'あたたかいみんなといっしょに',
     login: 'ログイン',
-    langSwitch: '한국어',
+    langLabel: '言語',
     navLabel: 'ページ',
     nav: { gate: '玄関', place: 'sukhi-social のこと', projects: 'プロジェクト', atfedi: 'atfedi.de とのこと', support: '支援' },
     footer: 'sukhi は、sukhi-social がつくっています。',
@@ -215,11 +221,10 @@ export const copy: Record<Locale, Copy> = {
     }
   },
   ko: {
-    lang: '한국어',
     siteName: 'sukhi',
     slogan: '따뜻한 사람들과 함께',
     login: '로그인',
-    langSwitch: '日本語',
+    langLabel: '언어',
     navLabel: '페이지',
     nav: { gate: '현관', place: 'sukhi-social 이야기', projects: '프로젝트', atfedi: 'atfedi.de 이야기', support: '후원' },
     footer: 'sukhi는 sukhi-social이 만들고 있어요.',
@@ -333,5 +338,125 @@ export const copy: Record<Locale, Copy> = {
       ],
       open: 'atfedi.de 열기'
     }
+  },
+  en: {
+    siteName: 'sukhi',
+    slogan: 'Together with warm friends',
+    login: 'Log in',
+    langLabel: 'Language',
+    navLabel: 'Pages',
+    nav: { gate: 'Home', place: 'About sukhi-social', projects: 'Projects', atfedi: 'About atfedi.de', support: 'Support' },
+    footer: 'sukhi is made by sukhi-social.',
+    notFound: {
+      title: "Oh, there's nothing here",
+      text: "It's okay to take a wrong turn. Let's head back to the front door together.",
+      back: 'Back to the front door'
+    },
+    gate: {
+      title: 'sukhi — Together with warm friends',
+      description: 'sukhi is a gentle place where people can gather, or just drop by.',
+      lead: "sukhi-social is a gentle place where people can gather, or just drop by. Stay a while, or say hi and go — either is fine. There's no hurry. Take your time looking around.",
+      doorsHeading: 'Where would you like to start?',
+      doors: [
+        { key: 'place', title: 'About sukhi-social', text: 'What kind of place this is, and the feelings behind it.' },
+        { key: 'projects', title: 'Projects', text: 'What we are making for this place right now.' },
+        { key: 'atfedi', title: 'About atfedi.de', text: 'A friendly guide for newcomers, and how it relates to sukhi.' },
+        { key: 'support', title: 'Support', text: 'A way to send warm thoughts that help sukhi keep going.' }
+      ]
+    },
+    place: {
+      title: 'About sukhi-social — sukhi',
+      description: 'sukhi-social is a gentle place where people can gather, or just drop by.',
+      heading: 'About sukhi-social',
+      blocks: [
+        {
+          heading: 'What kind of place is it?',
+          text: [
+            'sukhi-social is a gentle place where people can gather, or just drop by.',
+            'You can stay a long while, or just say hi and go. Both are perfectly normal here.'
+          ]
+        },
+        {
+          heading: 'What we care about',
+          text: [
+            'Being warm, and not being in a hurry. It is okay not to know, and okay to feel lost.',
+            '"Together with warm friends" is our very first promise.'
+          ]
+        },
+        {
+          heading: 'Where is it?',
+          text: [
+            'We plan to open it at sukhi.social. If you are new, you can look around here (the about site) first, and then log in.',
+            'sukhi is part of the "fediverse", a world of social networks and services that are connected to each other. You do not need any special knowledge — and if you have some, that is welcome too.'
+          ]
+        },
+        {
+          heading: 'About the name',
+          text: [
+            'sukhi comes from "sukhī" in Sanskrit and other languages. It means "happy".',
+            'And one more tiny secret: the kanji 好 hides "kuro" inside it.'
+          ]
+        }
+      ]
+    },
+    projects: {
+      title: 'Projects — sukhi',
+      description: 'What sukhi-social is making for this place.',
+      heading: 'Projects',
+      lead: 'To support this place, sukhi-social makes a few different things. All of it is open, so anyone can look inside. If something sounds technical, the one-line description is all you need.',
+      items: [
+        { name: 'sukhi-fedi', href: FEDI_REPO_URL, text: 'The social network software that runs sukhi.social. It is built to connect easily with apps for Mastodon and Misskey.' },
+        { name: 'atfedi.de', href: ATFEDI_URL, text: 'A friendly directory of fediverse tools. More in "About atfedi.de".' },
+        { name: 'mazemaze-api', href: 'https://github.com/sukhi-social/mazemaze-api', text: 'Parts that make it easier to build apps that connect to social networks like Misskey and Mastodon.' },
+        { name: 'ojak-ex', href: 'https://github.com/sukhi-social/ojak-ex', text: 'A behind-the-scenes part for the Elixir language, handling things like the "signatures" social networks use when they talk to each other.' }
+      ],
+      techHeading: 'For people who read code',
+      techText: 'The source code is open on GitHub. Have a look if something catches your eye.',
+      more: 'See everything on GitHub'
+    },
+    support: {
+      title: 'Support — sukhi',
+      description: 'Ways to donate to sukhi, or to send a message.',
+      heading: 'Support',
+      thanks: [
+        'Thank you for your interest in sukhi.',
+        'Whatever you send helps sukhi keep going, and we will treat it with care. Only when it is easy for you — that is more than enough.'
+      ],
+      donateHeading: 'Donate',
+      donate: [
+        { name: 'Liberapay', href: LIBERAPAY_URL },
+        { name: 'GitHub Sponsors', href: SPONSORS_URL },
+        { name: 'Fairy by hada.io', href: FAIRY_URL, note: 'For readers in Korea.' }
+      ],
+      reachHeading: 'Messages are welcome, too',
+      reachText: 'A few words instead of a donation is a big help as well.',
+      reach: [
+        { label: 'Email', value: CONTACT_MAIL, href: `mailto:${CONTACT_MAIL}` },
+        { label: 'ActivityPub', value: CONTACT_AP }
+      ]
+    },
+    atfedi: {
+      title: 'About atfedi.de — sukhi',
+      description: 'atfedi.de, a friendly directory of fediverse tools, and how it relates to sukhi.',
+      heading: 'About atfedi.de',
+      what: [
+        'atfedi.de is an open directory of tools for the fediverse. It is a gentle guide for people who have just arrived.',
+        "It's okay to feel lost, and okay not to know much yet. Nobody here is in a hurry. That is the spirit it is made in."
+      ],
+      facts: [
+        'It has two doors: "Use" and "Build".',
+        'You can read it in Japanese, English, and Korean.',
+        'The page content is CC0, so you can copy, change, and share it freely.',
+        'Its sister site is joinfediverse.kr, which helps you choose a server.'
+      ],
+      relHeading: 'How it relates to sukhi',
+      rel: [
+        'sukhi-social is a place where people gather and spend time. atfedi.de is a map for finding what you can use in the fediverse.',
+        'atfedi.de is a sub-project of sukhi-social. Its source code lives on the sukhi-social GitHub, too.',
+        'Both share the same feeling: warm, and not in a hurry.'
+      ],
+      open: 'Open atfedi.de'
+    }
   }
+
 };

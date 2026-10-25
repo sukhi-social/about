@@ -1,0 +1,46 @@
+---
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// 言語えらび。いまの言語が見えて、ひらくと、どの言語も「その言語自身の文字」で並ぶ。
+// <details> なので、JS が無くても開け閉めできる(下の小さな script は、外を
+// 押す / Esc で閉じるだけ)。
+import { BASES, LOCALES, copy, type Locale, type PageKey } from '../content';
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+}
+const { locale, page } = Astro.props;
+const hrefFor = (l: Locale) => (page === 'gate' ? BASES[l] : `${BASES[l]}${page}/`);
+const current = LOCALES.find((l) => l.code === locale)!;
+---
+
+<details class="lang-picker">
+  <summary aria-label={copy[locale].langLabel}>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z" /></svg>
+    <span lang={current.code}>{current.name}</span>
+    <svg class="chev" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+  </summary>
+  <ul>
+    {LOCALES.map((l) => (
+      <li>
+        <a href={hrefFor(l.code)} lang={l.code} hreflang={l.code} aria-current={l.code === locale ? 'true' : undefined}>
+          <span class="check" aria-hidden="true">{l.code === locale ? '✓' : ''}</span>{l.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</details>
+
+<script>
+  document.querySelectorAll<HTMLDetailsElement>('.lang-picker').forEach((d) => {
+    document.addEventListener('click', (e) => {
+      if (d.open && !d.contains(e.target as Node)) d.open = false;
+    });
+    d.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && d.open) {
+        d.open = false;
+        d.querySelector('summary')?.focus();
+      }
+    });
+  });
+</script>

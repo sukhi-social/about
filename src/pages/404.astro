@@ -3,7 +3,7 @@
 // 迷いこんだ人にも、やさしく。どちらの言葉も、ならべて出す。
 import '../layouts/fonts';
 import '../styles/about.css';
-import { copy } from '../content';
+import { BASES, copy } from '../content';
 ---
 
 <!doctype html>
@@ -17,11 +17,11 @@ import { copy } from '../content';
   <body>
     <main class="lost">
       <p class="big" aria-hidden="true">(=・ω・=)?</p>
-      {(['ja', 'ko'] as const).map((l) => (
+      {(['ja', 'en', 'ko'] as const).map((l) => (
         <section lang={l}>
           <h1 class="plain">{copy[l].notFound.title}</h1>
           <p>{copy[l].notFound.text}</p>
-          <p><a class="button" href={l === 'ja' ? '/' : '/ko/'}>{copy[l].notFound.back}</a></p>
+          <p><a class="button" href={BASES[l]}>{copy[l].notFound.back}</a></p>
         </section>
       ))}
     </main>
