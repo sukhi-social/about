@@ -31,3 +31,12 @@ node scripts/gen-licenses.mjs
 ```
 
 フォントのライセンス全文(OFL)も、同じスクリプトが `public/licenses/fonts/` に写します。
+
+## TODO
+
+spec.sukhi.social(仕様の置き場)まわり。置き場の TODO は sukhi-fedi の `TODO.md` にあります。
+
+- [ ] spec.sukhi.social へのリンクを置く(「実装している仕様」の入口)。
+- [ ] 実装済みの仕様の一覧(sukhi-fedi の `docs/specs/README.md` の表)を、読みやすく見せる。
+- [ ] 仕様ページでは STE-100 の英文と、日本語の「こんな意図で書いたよ」欄を並べる。日本語欄は規範ではないと見た目で分かるようにして、畳めるようにする。
+- [ ] 識別子の URL はカテゴリなしが正規形。コピーされてもカテゴリ入りが混ざらないよう、案内を書く。
