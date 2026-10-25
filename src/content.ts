@@ -349,7 +349,7 @@ export const copy: Record<Locale, Copy> = {
   },
   en: {
     siteName: 'sukhi',
-    slogan: 'Together with warm friends',
+    slogan: "Let's be together",
     login: 'Log in',
     langLabel: 'Language',
     navLabel: 'Pages',
@@ -361,9 +361,9 @@ export const copy: Record<Locale, Copy> = {
       back: 'Back to the front door'
     },
     gate: {
-      title: 'sukhi — Together with warm friends',
+      title: "sukhi — Let's be together",
       description: 'sukhi is a gentle place where people can gather, or just drop by.',
-      lead: "sukhi-social is a gentle place where people can gather, or just drop by. Stay a while, or say hi and go — either is fine. There's no hurry. Take your time looking around.",
+      lead: "sukhi-social is a warm, gentle place where people can gather, or just drop by. Stay a while, or say hi and go — either is fine. There's no hurry. Take your time looking around.",
       doorsHeading: 'Where would you like to start?',
       doors: [
         { key: 'place', title: 'About sukhi-social', text: 'What kind of place this is, and the feelings behind it.' },
@@ -388,7 +388,7 @@ export const copy: Record<Locale, Copy> = {
           heading: 'What we care about',
           text: [
             'Being warm, and not being in a hurry. It is okay not to know, and okay to feel lost.',
-            '"Together with warm friends" is our very first promise.'
+            '"Let\'s be together" is our very first promise.'
           ]
         },
         {
