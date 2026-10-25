@@ -119,8 +119,8 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
     },
     footerContent: 'ページの内容は CC BY 4.0',
     thanks: [
-      'この感謝は、譲渡できません。',
-      'このソフトウェアは、関わってくださったみなさんの、続いていく貢献があって成り立っています。ここに、小さくて、取り消せなくて、無保証で、あるがままの「ありがとう」を贈ります。'
+      'このソフトウェアは、関わってくださったみなさんの、続いていく貢献があって成り立っています。ここに、小さくて、取り消せなくて、無保証で、あるがままの「ありがとう」を贈ります。',
+      'この感謝は、譲渡できません。'
     ]
   },
   en: {
@@ -192,8 +192,8 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
     },
     footerContent: 'Page content: CC BY 4.0',
     thanks: [
-      'This thanks is non-transferable.',
-      'This software exists thanks to the continuous contributions of everyone involved. I hereby give a small, irrevocable, warranty-free, AS-IS “Thank you!”'
+      'This software exists thanks to the continuous contributions of everyone involved. I hereby give a small, irrevocable, warranty-free, AS-IS “Thank you!”',
+      'This thanks is non-transferable.'
     ]
   },
   ko: {
@@ -265,8 +265,8 @@ export const licensesCopy: Record<Locale, LicensesCopy> = {
     },
     footerContent: '페이지 내용은 CC BY 4.0',
     thanks: [
-      '이 감사는 양도할 수 없습니다.',
-      '이 소프트웨어는 여러분의 계속된 기여 덕에 존재합니다. 작고, 취소할 수 없는, 어떠한 보증 없는 “있는 그대로”의 감사를 이곳에서 전합니다.'
+      '이 소프트웨어는 여러분의 계속된 기여 덕에 존재합니다. 작고, 취소할 수 없는, 어떠한 보증 없는 “있는 그대로”의 감사를 이곳에서 전합니다.',
+      '이 감사는 양도할 수 없습니다.'
     ]
   }
 };
