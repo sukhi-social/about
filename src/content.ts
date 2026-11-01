@@ -3,13 +3,12 @@
 // このページの言葉は、ここにまとめてある。ja を正本に、ko は同じ形で。
 // 文体は web/ の locales に合わせて、やさしく(ja)・해요체(ko)。
 
-// ログインのリンク先。sukhi.social で sukhi-fedi を動かすようになったら、
-// ここだけを本当の場所に差し替える(いまは仮)。
-export const LOGIN_URL = 'https://sukhi.social/login';
+// ログインのリンク先(sukhi-fedi の web-next)。welcome=true は「about から来た、
+// はじめての人」の印で、web-next は加入(signup)への道を大きく見せる。
+export const LOGIN_URL = 'https://sukhi.social/login?welcome=true';
 
-// TODO: インスタンス(sukhi.social)が上がったら true にして、ログインのボタンを出す。
-//       そのとき LOGIN_URL も本当のリンク先か確かめる。
-export const SHOW_LOGIN = false;
+// 右上のログインボタンを出すか。
+export const SHOW_LOGIN = true;
 
 export const ORG_URL = 'https://github.com/sukhi-social';
 export const FEDI_REPO_URL = 'https://github.com/sukhi-social/sukhi-fedi';
